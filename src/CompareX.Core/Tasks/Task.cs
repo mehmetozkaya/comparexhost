@@ -2,10 +2,8 @@
 using Abp.Domain.Entities.Auditing;
 using Abp.Timing;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace CompareX.Tasks
 {
@@ -37,12 +35,12 @@ namespace CompareX.Tasks
         {
             Title = title;
             Description = description;
-        }        
+        }       
+    }
 
-        public enum TaskState : byte
-        {
-            Open = 0,
-            Completed = 1
-        }
+    public enum TaskState : byte
+    {
+        Open = 0,
+        Completed = 1
     }
 }
