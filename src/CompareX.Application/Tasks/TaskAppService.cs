@@ -1,16 +1,25 @@
-﻿using Abp.Application.Services.Dto;
-using Abp.Collections.Extensions;
-using Abp.Domain.Repositories;
-using CompareX.Tasks.Dto;
-using System;
+﻿//using Abp.Application.Services.Dto;
+//using Abp.Collections.Extensions;
+//using Abp.Domain.Repositories;
+//using CompareX.Tasks.Dto;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using Abp.Application.Services.Dto;
+using Abp.Domain.Repositories;
+using Abp.Linq.Extensions;
+using CompareX.Tasks.Dto;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace CompareX.Tasks
 {
-    public class TaskAppService : SimpleTaskAppAppServiceBase, ITaskAppService
+    public class TaskAppService : CompareXAppServiceBase, ITaskAppService
     {
         private readonly IRepository<Task> _taskRepository;
 
@@ -27,10 +36,7 @@ namespace CompareX.Tasks
                 .OrderByDescending(t => t.CreationTime)
                 .ToListAsync();
 
-
-
-
-            throw new NotImplementedException();
+            return new ListResultDto<TaskListDto>(ObjectMapper.Map<List<TaskListDto>>(tasks));
         }
     }
 }
