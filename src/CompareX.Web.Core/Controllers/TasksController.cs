@@ -15,7 +15,7 @@ namespace CompareX.Controllers
 
         public TasksController(ITaskAppService taskAppService)
         {
-            _taskAppService = taskAppService ?? throw new ArgumentNullException(nameof(taskAppService));            
+            _taskAppService = taskAppService ?? throw new ArgumentNullException(nameof(taskAppService));
         }
 
         [HttpPost]
