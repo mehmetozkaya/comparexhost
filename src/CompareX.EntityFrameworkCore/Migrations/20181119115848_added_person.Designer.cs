@@ -4,14 +4,16 @@ using CompareX.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CompareX.Migrations
 {
     [DbContext(typeof(CompareXDbContext))]
-    partial class CompareXDbContextModelSnapshot : ModelSnapshot
+    [Migration("20181119115848_added_person")]
+    partial class added_person
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

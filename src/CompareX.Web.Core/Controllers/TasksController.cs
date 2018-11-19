@@ -24,5 +24,6 @@ namespace CompareX.Controllers
             var output = _taskAppService.GetAll(input);
             return ObjectMapper.Map<List<AllTasksInfoModel>>(output.Result.Items);
         }
+
     }
 }
