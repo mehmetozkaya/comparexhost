@@ -11,6 +11,5 @@ namespace CompareX.Tasks
     public interface ITaskAppService : IApplicationService
     {
         Task<ListResultDto<TaskListDto>> GetAll(GetAllTasksInput input);
-
     }
 }
