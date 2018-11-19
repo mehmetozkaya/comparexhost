@@ -25,5 +25,12 @@ namespace CompareX.Controllers
             return ObjectMapper.Map<List<AllTasksInfoModel>>(output.Result.Items);
         }
 
+
+        [HttpPost]
+        public void Create([FromBody] CreateTaskInput input)
+        {
+            var output = _taskAppService.Create(input);
+        }
+
     }
 }

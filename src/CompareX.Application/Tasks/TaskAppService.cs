@@ -17,7 +17,7 @@ namespace CompareX.Tasks
         public TaskAppService(IRepository<Task> taskRepository)
         {
             _taskRepository = taskRepository;
-        }    
+        }
 
         public async Task<ListResultDto<TaskListDto>> GetAll(GetAllTasksInput input)
         {
@@ -38,7 +38,5 @@ namespace CompareX.Tasks
             var task = ObjectMapper.Map<Task>(createTaskInput);
             await _taskRepository.InsertAsync(task);
         }
-
-
     }
 }
