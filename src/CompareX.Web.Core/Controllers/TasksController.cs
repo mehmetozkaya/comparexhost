@@ -8,6 +8,7 @@ using System.Text;
 
 namespace CompareX.Controllers
 {
+    [Route("api/[controller]/[action]")]
     public class TasksController : CompareXControllerBase
     {
         private readonly ITaskAppService _taskAppService;
@@ -17,11 +18,11 @@ namespace CompareX.Controllers
             _taskAppService = taskAppService ?? throw new ArgumentNullException(nameof(taskAppService));            
         }
 
-        [HttpGet]
-        public List<AllTasksInfoModel> GetAllTasks(GetAllTasksInput input)
+        [HttpPost]
+        public List<AllTasksInfoModel> GetAll([FromBody] GetAllTasksInput input)
         {
-            var output = _taskAppService.GetAll(input);            
-            return ObjectMapper.Map<List<AllTasksInfoModel>>(output.Result);
+            var output = _taskAppService.GetAll(input);
+            return ObjectMapper.Map<List<AllTasksInfoModel>>(output.Result.Items);
         }
     }
 }
