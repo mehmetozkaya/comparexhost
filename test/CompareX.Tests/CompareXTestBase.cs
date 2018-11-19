@@ -14,6 +14,7 @@ using CompareX.EntityFrameworkCore;
 using CompareX.EntityFrameworkCore.Seed.Host;
 using CompareX.EntityFrameworkCore.Seed.Tenants;
 using CompareX.MultiTenancy;
+using CompareX.Tests.TestDatas;
 
 namespace CompareX.Tests
 {
@@ -44,6 +45,12 @@ namespace CompareX.Tests
                 NormalizeDbContext(context);
                 new TenantRoleAndUserBuilder(context, 1).Create();
             });
+
+            UsingDbContext(context =>
+            {
+                NormalizeDbContext(context);
+                new TestDataBuilder(context).Build();
+            });            
 
             LoginAsDefaultTenantAdmin();
         }
