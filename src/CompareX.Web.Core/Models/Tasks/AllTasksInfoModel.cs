@@ -31,6 +31,7 @@ namespace CompareX.Models.Tasks
                 }
             }
         }
-
+        public Guid? AssignedPersonId { get; set; }
+        public string AssignedPersonName { get; set; }
     }   
 }
