@@ -1,6 +1,7 @@
 ﻿using CompareX.Tasks;
 using CompareX.Tasks.Dto;
 using Shouldly;
+using System.Linq;
 using Xunit;
 
 namespace CompareX.Tests.Tasks
@@ -21,6 +22,7 @@ namespace CompareX.Tests.Tasks
             var output = await _taskAppService.GetAll(new GetAllTasksInput());
             // Assert
             output.Items.Count.ShouldBe(2);
+            output.Items.Count(t => t.AssignedPersonName != null).ShouldBe(1);
         }
 
         [Fact]

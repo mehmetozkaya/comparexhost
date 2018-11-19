@@ -28,7 +28,9 @@ namespace CompareX.Tasks
                 .OrderByDescending(t => t.CreationTime)
                 .ToListAsync();
 
-            return new ListResultDto<TaskListDto>(ObjectMapper.Map<List<TaskListDto>>(tasks));
+            return new ListResultDto<TaskListDto>(
+                ObjectMapper.Map<List<TaskListDto>>(tasks)
+                );
         }
     }
 }
