@@ -17,5 +17,10 @@ namespace CompareX.Tasks.Dto
         public string Description { get; set; }
 
         public Guid? AssignedPersonId { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("[CreateTaskInput > AssignedPersonId = {0}, Description = {1}]", AssignedPersonId, Description);
+        }
     }
 }

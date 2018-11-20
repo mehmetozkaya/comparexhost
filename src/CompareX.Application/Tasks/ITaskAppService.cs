@@ -8,5 +8,9 @@ namespace CompareX.Tasks
     {
         System.Threading.Tasks.Task<ListResultDto<TaskListDto>> GetAll(GetAllTasksInput input);
         System.Threading.Tasks.Task Create(CreateTaskInput createTaskInput);
+
+        GetTasksOutput GetTasks(GetTaskInput input);
+        void UpdateTask(UpdateTaskInput input);
+        void CreateTask(CreateTaskInput input);
     }
 }
