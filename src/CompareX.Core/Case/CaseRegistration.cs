@@ -24,7 +24,6 @@ namespace CompareX.Case
 
         protected CaseRegistration()
         {
-
         }
 
         public async Task<CaseRegistration> CreateAsync(Case newCase, User user, IEventRegistrationPolicy registrationPolicy)
