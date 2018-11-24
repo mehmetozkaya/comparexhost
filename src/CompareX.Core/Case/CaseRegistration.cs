@@ -43,7 +43,8 @@ namespace CompareX.Case
 
     }
 
-    interface IEventRegistrationPolicy
+    // for temporary purpose
+    internal interface IEventRegistrationPolicy
     {
         Task CheckRegistrationAttemptAsync(Case newCase, User user);
     }
