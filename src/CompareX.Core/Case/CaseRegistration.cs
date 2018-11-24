@@ -42,4 +42,9 @@ namespace CompareX.Case
 
 
     }
+
+    interface IEventRegistrationPolicy
+    {
+
+    }
 }
