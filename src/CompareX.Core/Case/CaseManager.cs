@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Events.Bus;
+using Abp.UI;
 using CompareX.Authorization.Users;
 
 namespace CompareX.Case
@@ -13,38 +14,27 @@ namespace CompareX.Case
         public IEventBus EventBus { get; set; }
 
         private readonly ICaseRegistrationPolicy _registrationPolicy;
-        private readonly IRepository<CaseRegistration> _eventRegistrationRepository;
-        private readonly IRepository<Case, Guid> _eventRepository;
+        private readonly IRepository<CaseRegistration> _caseRegistrationRepository;
+        private readonly IRepository<Case, Guid> _caseRepository;
 
+        public CaseManager(ICaseRegistrationPolicy registrationPolicy, IRepository<CaseRegistration> caseRegistrationRepository, IRepository<Case, Guid> caseRepository)
+        {            
+            _registrationPolicy = registrationPolicy ?? throw new ArgumentNullException(nameof(registrationPolicy));
+            _caseRegistrationRepository = caseRegistrationRepository ?? throw new ArgumentNullException(nameof(caseRegistrationRepository));
+            _caseRepository = caseRepository ?? throw new ArgumentNullException(nameof(caseRepository));
 
-        public void Cancel(Case cancelCase)
-        {
-            throw new NotImplementedException();
+            EventBus = NullEventBus.Instance;
         }
 
-        public Task CancelRegistrationAsync(Case cancelRegisterCase, User user)
+        public async Task<Case> GetAsync(Guid id)
         {
-            throw new NotImplementedException();
-        }
+            var @event = await _caseRepository.FirstOrDefaultAsync(id);
+            if (@event == null)
+            {
+                throw new UserFriendlyException("Could not found the event, maybe it's deleted!");
+            }
 
-        public Task CreateAsync(Case newCase)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Case> GetAsync(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IReadOnlyList<User>> GetRegisteredUsersAsync(Case registeredCase)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<CaseRegistration> RegisterAsync(Case registerCase, User user)
-        {
-            throw new NotImplementedException();
-        }
+            return @event;
+        }        
     }
 }
