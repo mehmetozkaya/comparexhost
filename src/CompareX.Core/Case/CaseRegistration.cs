@@ -28,7 +28,7 @@ namespace CompareX.Case
         {
         }
 
-        public static async Task<CaseRegistration> CreateAsync(Case newCase, User user, IEventRegistrationPolicy registrationPolicy)
+        public static async Task<CaseRegistration> CreateAsync(Case newCase, User user, ICaseRegistrationPolicy registrationPolicy)
         {
             await registrationPolicy.CheckRegistrationAttemptAsync(newCase, user);
 
@@ -59,11 +59,5 @@ namespace CompareX.Case
             await repository.DeleteAsync(this);
         }
 
-    }
-
-    // for temporary purpose
-    public interface IEventRegistrationPolicy
-    {
-        Task CheckRegistrationAttemptAsync(Case newCase, User user);
-    }
+    }   
 }
