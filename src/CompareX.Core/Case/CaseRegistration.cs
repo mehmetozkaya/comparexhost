@@ -1,5 +1,6 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using Abp.Domain.Repositories;
 using CompareX.Authorization.Users;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,11 @@ namespace CompareX.Case
                 UserId = user.Id,
                 User = user
             };
+        }
+
+        public async Task CancelAsync(IRepository<CaseRegistration> repository)
+        {
+
         }
 
 
