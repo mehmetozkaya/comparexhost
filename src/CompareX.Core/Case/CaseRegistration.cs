@@ -1,6 +1,7 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using Abp.Domain.Repositories;
+using Abp.UI;
 using CompareX.Authorization.Users;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace CompareX.Case
         {
         }
 
-        public async Task<CaseRegistration> CreateAsync(Case newCase, User user, IEventRegistrationPolicy registrationPolicy)
+        public static async Task<CaseRegistration> CreateAsync(Case newCase, User user, IEventRegistrationPolicy registrationPolicy)
         {
             await registrationPolicy.CheckRegistrationAttemptAsync(newCase, user);
 
@@ -43,9 +44,20 @@ namespace CompareX.Case
 
         public async Task CancelAsync(IRepository<CaseRegistration> repository)
         {
+            if (repository == null) { throw new ArgumentNullException("repository"); }
 
+            if (Case.IsInPast())
+            {
+                throw new UserFriendlyException("Can not cancel event which is in the past!");
+            }
+
+            if (Case.IsAllowedCancellationTimeEnded())
+            {
+                throw new UserFriendlyException("It's too late to cancel your registration!");
+            }
+
+            await repository.DeleteAsync(this);
         }
-
 
     }
 
