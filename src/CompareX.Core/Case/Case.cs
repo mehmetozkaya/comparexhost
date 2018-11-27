@@ -75,7 +75,7 @@ namespace CompareX.Case
 
             SetDate(date);
 
-            DomainEvents.EventBus.Trigger(new CaseDateChangedEvent(this));
+            // DomainEvents.EventBus.Trigger(new CaseDateChangedEvent(this));
         }
 
         internal void Cancel()
@@ -100,7 +100,7 @@ namespace CompareX.Case
 
             Date = date;
 
-            DomainEvents.EventBus.Trigger(new EventDateChangedEvent(this));
+            // DomainEvents.EventBus.Trigger(new EventDateChangedEvent(this));
         }
 
         private void AssertNotInPast()
