@@ -35,6 +35,36 @@ namespace CompareX.Case
             }
 
             return @event;
-        }        
+        }
+
+        // TODO : here
+
+        public Task CreateAsync(Case newCase)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Cancel(Case cancelCase)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<CaseRegistration> RegisterAsync(Case registerCase, User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task CancelRegistrationAsync(Case cancelRegisterCase, User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IReadOnlyList<User>> GetRegisteredUsersAsync(Case registeredCase)
+        {
+            throw new NotImplementedException();
+        }
+
+        
+
     }
 }
