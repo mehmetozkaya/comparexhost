@@ -123,6 +123,7 @@ namespace CompareX.Case
         {
             if(IsInPast())
             {
+                throw new UserFriendlyException("This event was in the past");
                 return;
             }
         }
