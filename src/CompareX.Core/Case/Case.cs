@@ -121,7 +121,10 @@ namespace CompareX.Case
 
         private void AssertNotImported()
         {
-
+            if(IsInPast())
+            {
+                return;
+            }
         }
     }
 }
