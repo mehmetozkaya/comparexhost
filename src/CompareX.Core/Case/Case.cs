@@ -118,5 +118,10 @@ namespace CompareX.Case
                 throw new UserFriendlyException("This event is canceled!");
             }
         }
+
+        private void AssertNotImported()
+        {
+
+        }
     }
 }
