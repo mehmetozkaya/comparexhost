@@ -117,15 +117,6 @@ namespace CompareX.Case
             {
                 throw new UserFriendlyException("This event is canceled!");
             }
-        }
-
-        private void AssertNotImported()
-        {
-            if(IsInPast())
-            {
-                throw new UserFriendlyException("This event was in the past");
-                return;
-            }
-        }
+        }      
     }
 }
