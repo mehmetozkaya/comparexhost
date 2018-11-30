@@ -44,7 +44,8 @@ namespace CompareX.Case
 
         public void Cancel(Case cancelCase)
         {
-            throw new NotImplementedException();
+            cancelCase.Cancel();
+            EventBus.Trigger(new CaseCancelledEvent(cancelCase));
         }
 
         public Task<CaseRegistration> RegisterAsync(Case registerCase, User user)
