@@ -25,7 +25,7 @@ namespace CompareX.Case
             _caseRegistrationRepository = caseRegistrationRepository ?? throw new ArgumentNullException(nameof(caseRegistrationRepository));
             _caseRepository = caseRepository ?? throw new ArgumentNullException(nameof(caseRepository));
 
-            EventBus = NullEventBus.Instance;
+            EventBus = NullEventBus.Instance;            
         }
 
         public async Task<Case> GetAsync(Guid id)
@@ -46,7 +46,7 @@ namespace CompareX.Case
 
         public void Cancel(Case cancelCase)
         {
-            cancelCase.Cancel();
+            cancelCase.Cancel();            
             EventBus.Trigger(new CaseCancelledEvent(cancelCase));
         }
 
