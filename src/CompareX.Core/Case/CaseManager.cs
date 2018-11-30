@@ -28,20 +28,18 @@ namespace CompareX.Case
 
         public async Task<Case> GetAsync(Guid id)
         {
-            var @event = await _caseRepository.FirstOrDefaultAsync(id);
-            if (@event == null)
+            var getCase = await _caseRepository.FirstOrDefaultAsync(id);
+            if (getCase == null)
             {
                 throw new UserFriendlyException("Could not found the event, maybe it's deleted!");
             }
 
-            return @event;
-        }
+            return getCase;
+        }        
 
-        // TODO : here
-
-        public Task CreateAsync(Case newCase)
+        public async Task CreateAsync(Case newCase)
         {
-            throw new NotImplementedException();
+            await _caseRepository.InsertAsync(newCase);
         }
 
         public void Cancel(Case cancelCase)
