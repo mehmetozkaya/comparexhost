@@ -2,6 +2,7 @@
 using Abp.Domain.Uow;
 using Abp.Events.Bus.Entities;
 using Abp.Events.Bus.Handlers;
+using Abp.Threading;
 using Castle.Core.Logging;
 using CompareX.Authorization.Users;
 using System;
@@ -11,10 +12,7 @@ using System.Text;
 
 namespace CompareX.Case.Notifications
 {
-    public class CaseUserEmailer : IEventHandler<EntityCreatedEventData<Case>>,
-        IEventHandler<CaseDateChangedEvent>,
-        IEventHandler<CaseCancelledEvent>,
-        ITransientDependency
+    public class CaseUserEmailer : IEventHandler<EntityCreatedEventData<Case>>, IEventHandler<CaseDateChangedEvent>, IEventHandler<CaseCancelledEvent>, ITransientDependency
     {
         public ILogger Logger { get; set; }
 
@@ -41,6 +39,28 @@ namespace CompareX.Case.Notifications
             foreach (var user in users)
             {
                 var message = string.Format("Hey! There is a new event '{0}' on {1}! Want to register?", caseData.Entity.Title, caseData.Entity.Date);
+                Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
+            }
+        }
+
+        public void HandleEvent(CaseDateChangedEvent eventData)
+        {
+            //TODO: Send email to all registered users!
+            var registeredUsers = AsyncHelper.RunSync(() => _caseManager.GetRegisteredUsersAsync(eventData.Entity));
+            foreach (var user in registeredUsers)
+            {
+                var message = eventData.Entity.Title + " event's date is changed! New date is: " + eventData.Entity.Date;
+                Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
+            }
+        }
+
+        public void HandleEvent(CaseCancelledEvent eventData)
+        {
+            //TODO: Send email to all registered users!
+            var registeredUsers = AsyncHelper.RunSync(() => _caseManager.GetRegisteredUsersAsync(eventData.Entity));
+            foreach (var user in registeredUsers)
+            {
+                var message = eventData.Entity.Title + " event is canceled!";
                 Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
             }
         }
