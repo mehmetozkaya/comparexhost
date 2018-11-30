@@ -48,9 +48,11 @@ namespace CompareX.Case
             EventBus.Trigger(new CaseCancelledEvent(cancelCase));
         }
 
-        public Task<CaseRegistration> RegisterAsync(Case registerCase, User user)
+        public async Task<CaseRegistration> RegisterAsync(Case registerCase, User user)
         {
-            throw new NotImplementedException();
+            return await _caseRegistrationRepository.InsertAsync(
+                    await CaseRegistration.CreateAsync(registerCase, user, _registrationPolicy)
+                );
         }
 
         public Task CancelRegistrationAsync(Case cancelRegisterCase, User user)
