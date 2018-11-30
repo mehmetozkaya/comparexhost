@@ -13,6 +13,8 @@ namespace CompareX.EntityFrameworkCore
         /* Define a DbSet for each entity of the application */
         public DbSet<Task> Tasks { get; set; }
         public DbSet<Person> People { get; set; }
+        public DbSet<CompareX.Case.Case> Cases { get; set; }
+        public DbSet<CompareX.Case.CaseRegistration> CaseRegistrations { get; set; }
 
         public CompareXDbContext(DbContextOptions<CompareXDbContext> options)
             : base(options)
