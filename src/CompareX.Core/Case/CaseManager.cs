@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Events.Bus;
 using Abp.UI;
 using CompareX.Authorization.Users;
+using Microsoft.EntityFrameworkCore;
 
 namespace CompareX.Case
 {
@@ -55,14 +57,26 @@ namespace CompareX.Case
                 );
         }
 
-        public Task CancelRegistrationAsync(Case cancelRegisterCase, User user)
+        public async Task CancelRegistrationAsync(Case cancelRegisterCase, User user)
         {
-            throw new NotImplementedException();
+            var registration = await _caseRegistrationRepository.FirstOrDefaultAsync(r => r.CaseId == cancelRegisterCase.Id && r.UserId == user.Id);
+            if(registration == null)
+            {
+                //No need to cancel since there is no such a registration
+                return;
+            }
+
+            await registration.CancelAsync(_caseRegistrationRepository);
         }
 
-        public Task<IReadOnlyList<User>> GetRegisteredUsersAsync(Case registeredCase)
+        public async Task<IReadOnlyList<User>> GetRegisteredUsersAsync(Case registeredCase)
         {
-            throw new NotImplementedException();
+            return await _caseRegistrationRepository
+                .GetAll()
+                .Include(registration => registration.User)
+                .Where(registration => registration.CaseId == registeredCase.Id)
+                .Select(registration => registration.User)
+                .ToListAsync();
         }
 
         
