@@ -78,7 +78,6 @@ namespace CompareX.Case
                 .Select(registration => registration.User)
                 .ToListAsync();
         }
-
         
 
     }
