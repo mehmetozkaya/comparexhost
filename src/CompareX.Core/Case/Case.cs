@@ -2,6 +2,7 @@
 using Abp.Domain.Entities.Auditing;
 using Abp.Timing;
 using Abp.UI;
+using CompareX.Domain.Events;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -75,7 +76,7 @@ namespace CompareX.Case
 
             SetDate(date);
 
-            // DomainEvents.EventBus.Trigger(new CaseDateChangedEvent(this));
+            DomainEvents.EventBus.Trigger(new CaseDateChangedEvent(this));
         }
 
         internal void Cancel()
