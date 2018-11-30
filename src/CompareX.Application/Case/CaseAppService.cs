@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using Abp.Linq.Extensions;
 using Abp.AutoMapper;
 using System.Collections.Generic;
+using Abp.UI;
+using Abp.Runtime.Session;
+using CompareX.Authorization.Users;
 
 namespace CompareX.Case
 {
@@ -36,9 +39,59 @@ namespace CompareX.Case
             return new ListResultDto<CaseListDto>(cases.MapTo<List<CaseListDto>>());
         }
 
-        public Task<CaseRegisterOutput> RegisterAsync(EntityDto<Guid> input)
+        public async Task<CaseDetailOutput> GetDetailAsync(EntityDto<Guid> input)
         {
-            throw new NotImplementedException();
+            var detailedCase = await _caseRepository
+                .GetAll()
+                .Include(e => e.Registrations)
+                .ThenInclude(r => r.User)
+                .Where(e => e.Id == input.Id)
+                .FirstOrDefaultAsync();
+
+            if (detailedCase == null)
+            {
+                throw new UserFriendlyException("Could not found the event, maybe it's deleted.");
+            }
+
+            return detailedCase.MapTo<CaseDetailOutput>();
         }
+
+        public async Task CreateAsync(CreateCaseInput input)
+        {
+            var newCase = Case.Create(AbpSession.GetTenantId(), input.Title, input.Date, input.Description, input.MaxRegistrationCount);
+            await _caseManager.CreateAsync(newCase);
+        }
+
+        public async Task CancelAsync(EntityDto<Guid> input)
+        {
+            var cancelCase = await _caseManager.GetAsync(input.Id);
+            _caseManager.Cancel(cancelCase);
+        }
+
+        public async Task<CaseRegisterOutput> RegisterAsync(EntityDto<Guid> input)
+        {
+            var registration = await RegisterAndSaveAsync(await _caseManager.GetAsync(input.Id), await GetCurrentUserAsync());
+
+            return new CaseRegisterOutput
+            {
+                RegistrationId = registration.Id
+            };
+        }
+
+        public async Task CancelRegistrationAsync(EntityDto<Guid> input)
+        {
+            await _caseManager.CancelRegistrationAsync(
+                await _caseManager.GetAsync(input.Id),
+                await GetCurrentUserAsync()
+                );
+        }
+
+        private async Task<CaseRegistration> RegisterAndSaveAsync(Case @event, User user)
+        {
+            var registration = await _caseManager.RegisterAsync(@event, user);
+            await CurrentUnitOfWork.SaveChangesAsync();
+            return registration;
+        }
+
     }
 }
