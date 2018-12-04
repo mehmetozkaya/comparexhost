@@ -79,6 +79,13 @@ namespace CompareX.Case
                 .ToListAsync();
         }
         
+        private void GetUserCases(Case userCases)
+        {
+            var query = _caseRegistrationRepository
+                    .GetAll()
+                    .Select(r => r.CaseId == userCases.Id)
+                    .ToList();
+        }
 
     }
 }
