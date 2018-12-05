@@ -58,7 +58,7 @@ namespace CompareX.Case
 
         public async Task CreateAsync(CreateCaseInput input)
         {
-            var newCase = Case.Create(AbpSession.GetTenantId(), input.Title, input.Date, input.Description, input.MaxRegistrationCount);
+            var newCase = Case.Create(1, input.Title, input.Date, input.Description, input.MaxRegistrationCount);
             await _caseManager.CreateAsync(newCase);
         }
 
