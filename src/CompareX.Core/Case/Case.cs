@@ -87,7 +87,7 @@ namespace CompareX.Case
 
         internal void Delete()
         {
-
+            IsCancelled = true;
         }
 
         private void SetDate(DateTime date)
