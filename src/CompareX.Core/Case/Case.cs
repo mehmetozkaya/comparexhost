@@ -85,6 +85,11 @@ namespace CompareX.Case
             IsCancelled = true;
         }
 
+        internal void Delete()
+        {
+
+        }
+
         private void SetDate(DateTime date)
         {
             AssertNotCancelled();
