@@ -20,7 +20,13 @@ namespace CompareX.Tests.TestDatas
 
         public void Build()
         {
-            var neo = new Person("Neo");
+            var neo = new Person
+            {
+                Name = "Neo",
+                Surname = "Matrix",
+                EmailAddress = "white@rabbit.com"
+            };                           
+
             _context.People.Add(neo);
             _context.SaveChanges();
 

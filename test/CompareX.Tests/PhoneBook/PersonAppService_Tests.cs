@@ -23,5 +23,21 @@ namespace CompareX.Tests.PhoneBook
             //Assert
             persons.Items.Count.ShouldBe(3);
         }
+
+        [Fact]
+        public void Should_Get_People_With_Filter()
+        {
+            //Act
+            var persons = _personAppService.GetPeople(
+                new GetPeopleInput
+                {
+                    Filter = "adams"
+                });
+
+            //Assert
+            persons.Items.Count.ShouldBe(1);
+            persons.Items[0].Name.ShouldBe("Douglas");
+            persons.Items[0].Surname.ShouldBe("Adams");
+        }
     }
 }

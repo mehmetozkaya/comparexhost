@@ -18,7 +18,7 @@ namespace CompareX.People
 
         [Required]
         [MaxLength(MaxSurnameLength)]
-        public virtual string Surname { get; set; }
+        public string Surname { get; set; }
 
         [MaxLength(MaxEmailAddressLength)]
         public virtual string EmailAddress { get; set; }
