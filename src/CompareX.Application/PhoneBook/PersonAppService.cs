@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CompareX.PhoneBook
 {
@@ -19,7 +20,7 @@ namespace CompareX.PhoneBook
         public PersonAppService(IRepository<Person, Guid> personRepository)
         {
             _personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
-        }
+        }       
 
         public ListResultDto<PersonDto> GetPeople(GetPeopleInput input)
         {
@@ -37,5 +38,13 @@ namespace CompareX.PhoneBook
 
             return new ListResultDto<PersonDto>(ObjectMapper.Map<List<PersonDto>>(people));
         }
+
+        public async Task CreatePerson(CreatePersonInput input)
+        {
+            var person = ObjectMapper.Map<Person>(input);
+            await _personRepository.InsertAsync(person);
+        }
+
+
     }
 }
