@@ -1,4 +1,5 @@
-﻿using Abp.AutoMapper;
+﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
 using CompareX.People;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Text;
 namespace CompareX.PhoneBook.Dto
 {
     [AutoMapFrom(typeof(Person))]
-    public class CreatePersonInput
+    public class CreatePersonInput : FullAuditedEntityDto
     {
         [Required]
         [MaxLength(Person.MaxNameLength)]

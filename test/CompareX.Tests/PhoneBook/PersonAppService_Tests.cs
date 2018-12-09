@@ -2,6 +2,8 @@
 using CompareX.PhoneBook.Dto;
 using Shouldly;
 using System;
+using System.Linq;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace CompareX.Tests.PhoneBook
@@ -38,6 +40,27 @@ namespace CompareX.Tests.PhoneBook
             persons.Items.Count.ShouldBe(1);
             persons.Items[0].Name.ShouldBe("Douglas");
             persons.Items[0].Surname.ShouldBe("Adams");
+        }
+
+        [Fact]
+        public async Task Should_Create_Person_With_Valid_Arguments()
+        {
+            await _personAppService.CreatePerson(
+                new CreatePersonInput
+                {
+                    Name = "John",
+                    Surname = "Nash",
+                    EmailAddress = "john.nash@abeautifulmind.com"
+                });
+
+            // Assert
+            UsingDbContext(
+                context =>
+                {
+                    var john = context.People.FirstOrDefault(p => p.EmailAddress == "john.nash@abeautifulmind.com");
+                    john.ShouldNotBe(null);
+                    john.Name.ShouldBe("John");
+                });
         }
     }
 }
