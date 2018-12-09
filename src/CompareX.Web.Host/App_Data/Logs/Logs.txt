@@ -8006,3 +8006,935 @@ INFO  2018-12-04 16:33:03,558 [22   ] ore.Mvc.Internal.ControllerActionInvoker -
 INFO  2018-12-04 16:33:03,560 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.1609ms 200 application/json; charset=utf-8
 DEBUG 2018-12-04 16:38:04,531 [24   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: Zyw3jAfUzTK2wJKEY3RsEA
 INFO  2018-12-04 16:38:04,534 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 361654.8896ms 101 
+DEBUG 2018-12-09 13:14:24,888 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-12-09 13:14:25,851 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2018-12-09 13:14:25,864 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CompareX.Web.Host.Startup.CompareXWebHostModule, CompareX.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,866 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CompareX.CompareXWebCoreModule, CompareX.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,866 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CompareX.CompareXApplicationModule, CompareX.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,867 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CompareX.CompareXCoreModule, CompareX.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,867 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,867 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,867 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,868 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,868 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CompareX.EntityFrameworkCore.CompareXEntityFrameworkModule, CompareX.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,868 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,868 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,868 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,868 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,869 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,869 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.0.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:25,871 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2018-12-09 13:14:25,927 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-09 13:14:25,927 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-09 13:14:25,927 [1    ] o.Configuration.LanguageManagementConfig - Converted CompareX (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-09 13:14:25,927 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-12-09 13:14:26,211 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: CompareX.EntityFrameworkCore.CompareXDbContext, CompareX.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-12-09 13:14:26,845 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-12-09 13:14:26,896 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-12-09 13:14:26,933 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-12-09 13:14:26,958 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CompareX
+DEBUG 2018-12-09 13:14:26,984 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-12-09 13:14:27,106 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-12-09 13:14:27,142 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2018-12-09 13:14:27,142 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-12-09 13:14:27,147 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Models.Tasks.AllTasksInfoModel
+DEBUG 2018-12-09 13:14:27,147 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Users.Dto.CreateUserDto
+DEBUG 2018-12-09 13:14:27,147 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Users.Dto.UserDto
+DEBUG 2018-12-09 13:14:27,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Tasks.Dto.CreateTaskInput
+DEBUG 2018-12-09 13:14:27,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Tasks.Dto.TaskListDto
+DEBUG 2018-12-09 13:14:27,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-12-09 13:14:27,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-12-09 13:14:27,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Roles.Dto.CreateRoleDto
+DEBUG 2018-12-09 13:14:27,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Roles.Dto.PermissionDto
+DEBUG 2018-12-09 13:14:27,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Roles.Dto.RoleDto
+DEBUG 2018-12-09 13:14:27,149 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-12-09 13:14:27,149 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.MultiTenancy.Dto.TenantDto
+DEBUG 2018-12-09 13:14:27,149 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Case.Dto.CaseListDto
+DEBUG 2018-12-09 13:14:27,149 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CompareX.Case.Dto.CaseRegistrationDto
+INFO  2018-12-09 13:14:31,694 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 DEBUG http://localhost:21021/  0
+INFO  2018-12-09 13:14:31,694 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2018-12-09 13:14:31,770 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.3401ms 200 
+INFO  2018-12-09 13:14:34,570 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action CompareX.Web.Host.Controllers.HomeController.Index (CompareX.Web.Host)
+INFO  2018-12-09 13:14:35,602 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Web.Host.Controllers.HomeController.Index (CompareX.Web.Host) - Validation state: Valid
+INFO  2018-12-09 13:14:35,608 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Web.Host.Controllers.HomeController.Index (CompareX.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 2.7505ms.
+INFO  2018-12-09 13:14:35,816 [13   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2018-12-09 13:14:35,828 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Web.Host.Controllers.HomeController.Index (CompareX.Web.Host) in 1252.9667ms
+INFO  2018-12-09 13:14:35,850 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2018-12-09 13:14:35,854 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4168.0072ms 302 
+INFO  2018-12-09 13:14:35,865 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.2029ms 301 
+INFO  2018-12-09 13:14:35,872 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2018-12-09 13:14:35,909 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 37.3667ms 200 text/html
+INFO  2018-12-09 13:14:35,945 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2018-12-09 13:14:35,961 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2018-12-09 13:14:35,964 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2018-12-09 13:14:35,966 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2018-12-09 13:14:35,973 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2018-12-09 13:14:36,056 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'C:\Users\ezozkme\Source\Repos\comparexhost\src\CompareX.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2018-12-09 13:14:36,063 [7    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'C:\Users\ezozkme\Source\Repos\comparexhost\src\CompareX.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2018-12-09 13:14:36,076 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 87.0996ms 200 application/javascript
+INFO  2018-12-09 13:14:36,092 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 98.829ms 200 application/javascript
+INFO  2018-12-09 13:14:36,112 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2018-12-09 13:14:36,127 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 176.5095ms 200 text/css
+INFO  2018-12-09 13:14:36,287 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2018-12-09 13:14:36,313 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 325.6732ms 200 application/javascript
+INFO  2018-12-09 13:14:36,466 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2018-12-09 13:14:36,469 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 511.6751ms 200 application/javascript
+INFO  2018-12-09 13:14:36,716 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2018-12-09 13:14:38,073 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+INFO  2018-12-09 13:14:38,075 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1359.0424ms 200 text/plain
+INFO  2018-12-09 13:14:38,485 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2018-12-09 13:14:38,843 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+INFO  2018-12-09 13:14:38,845 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 359.999ms 200 text/plain
+INFO  2018-12-09 13:14:39,034 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2018-12-09 13:14:39,086 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2018-12-09 13:14:39,089 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2018-12-09 13:14:39,094 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.2998ms 200 image/png
+INFO  2018-12-09 13:14:39,098 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-16x16.png  
+INFO  2018-12-09 13:14:39,104 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2018-12-09 13:14:39,106 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.359ms 200 image/png
+INFO  2018-12-09 13:14:39,343 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 308.1915ms 200 application/json;charset=utf-8
+INFO  2018-12-09 13:16:15,560 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2018-12-09 13:16:15,626 [26   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:15,637 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 77.5903ms 204 
+INFO  2018-12-09 13:16:15,647 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2018-12-09 13:16:15,650 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:15,658 [28   ] uthentication.JwtBearer.JwtBearerHandler - JwtBearer was not authenticated. Failure message: No SecurityTokenValidator available for token: null
+WARN  2018-12-09 13:16:15,665 [28   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:15,667 [28   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:15,686 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2018-12-09 13:16:15,690 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:15,695 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2018-12-09 13:16:16,311 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 613.2203ms.
+INFO  2018-12-09 13:16:16,333 [24   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:16,373 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 684.2016ms
+INFO  2018-12-09 13:16:16,376 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 728.9682ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:16,390 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2018-12-09 13:16:16,392 [19   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:16,394 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.5149ms 204 
+INFO  2018-12-09 13:16:16,404 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2018-12-09 13:16:16,407 [20   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:16,425 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application)
+INFO  2018-12-09 13:16:16,427 [20   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:16,833 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:16:16,893 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 58.2909ms.
+INFO  2018-12-09 13:16:16,916 [20   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:16,935 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application) in 507.6911ms
+INFO  2018-12-09 13:16:16,938 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 533.1495ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:27,459 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/TokenAuth/Authenticate  
+INFO  2018-12-09 13:16:27,461 [20   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:27,463 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.6155ms 204 
+INFO  2018-12-09 13:16:27,468 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json 77
+INFO  2018-12-09 13:16:27,470 [19   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:27,493 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action CompareX.Controllers.TokenAuthController.Authenticate (CompareX.Web.Core)
+INFO  2018-12-09 13:16:27,495 [19   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:27,929 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Controllers.TokenAuthController.Authenticate (CompareX.Web.Core) with arguments (CompareX.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+INFO  2018-12-09 13:16:28,612 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Controllers.TokenAuthController.Authenticate (CompareX.Web.Core), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 681.6232ms.
+INFO  2018-12-09 13:16:28,887 [26   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:28,891 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Controllers.TokenAuthController.Authenticate (CompareX.Web.Core) in 1396.2036ms
+INFO  2018-12-09 13:16:28,894 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1426.0858ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:29,512 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2018-12-09 13:16:29,515 [33   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:29,518 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.4768ms 204 
+INFO  2018-12-09 13:16:29,535 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2018-12-09 13:16:29,538 [26   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:29,601 [26   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:29,727 [24   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:29,731 [24   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:29,734 [24   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:29,736 [24   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:29,748 [19   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:29,751 [19   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:29,773 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2018-12-09 13:16:29,775 [19   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:29,779 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2018-12-09 13:16:30,033 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 252.6589ms.
+INFO  2018-12-09 13:16:30,050 [26   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:30,053 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 278.2123ms
+INFO  2018-12-09 13:16:30,056 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 523.3886ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:30,066 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2018-12-09 13:16:30,068 [34   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:30,070 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.4853ms 204 
+INFO  2018-12-09 13:16:30,080 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2018-12-09 13:16:30,082 [20   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:30,085 [20   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:30,087 [20   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:30,089 [20   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:30,091 [20   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:30,094 [20   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:30,101 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application)
+INFO  2018-12-09 13:16:30,103 [20   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:30,107 [20   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:16:30,130 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 20.2972ms.
+INFO  2018-12-09 13:16:30,133 [24   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:30,137 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application) in 34.0213ms
+INFO  2018-12-09 13:16:30,140 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.2067ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:31,243 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/signalr/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FRkp3UZ8A1gKoReYXpvXHc0KFXzGY3aUxaXUOjpNPSTn4LyfFvWqGRq42yefBXGrkBTbBN3h9UXPP%2B25Rfae1rBCQrd8mQ0G3JHpGlVZBMKMD5RSIjWMCe3sPKe05J4ZS4x7ipM9FJHtoJ0Ev%2FfvM08rDbeioKKXNqOF9YqzdChxSnpsH4gsiia6e%2BSRx0RP0tV7puzp1%2FxhWt6Hmwla2Xqg8zxYyJSfZ4yia8phkG3vBsqrao7gIHqQhTP2plzT0azEEPZRlOTCbQ9eAt%2Bpl9qrWkWXDpqL6VEu09Ka7XEFyRXxp3Ok1BHvjI2yps8bHj1YKw4YVez94CrErclsn68JyL9SSiZ8GLpjG3re0KGd4rC5HK3uordLNVpL34mDtx8JruSQfXVg8vZS9dpSQHPrFVchBjp9SU8aLDkYVRS2p4i6NoZOw4p4TPC8gLDVxKqBiKi20ZXQa3Vw16CpclgNDMdq1HTelOnN13MTmwSMD4yU1hrMWVIHedaVzCiNt8jcVxGat%2B8vglpT%2FIE%2BFmY4JeRjTfrk93Z8XkuRcnhEmD%2B3pl9ST4TY22y5s03zcWnLMsI1o8pl%2BCh%2F%2B6zS9DWbaVmJVRxcv8YYVucE8Bdd6mCnVlONdqMaYQFUi4rza8SwXd%2BQ6Z%2B5cLkYp3hdAx4birPoOFoz%2BXMUbxee7oWtDQY3PHnKC2uFWqL082bWiHQWFYCvi3rVyS%2BWusqhnjv3pnsF00c7cnjRsKCjXLeK3%2B0HMUJ5YWsBTTxwJoVeOv7Vwgs2ufBPbp9knb%2BK5BOMH01mAXzjkBQHxYAPG3DUY3t52tfnXuejilvGxvGrdA%3D  
+INFO  2018-12-09 13:16:31,247 [24   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:31,249 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.1488ms 204 
+INFO  2018-12-09 13:16:31,385 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FRkp3UZ8A1gKoReYXpvXHc0KFXzGY3aUxaXUOjpNPSTn4LyfFvWqGRq42yefBXGrkBTbBN3h9UXPP%2B25Rfae1rBCQrd8mQ0G3JHpGlVZBMKMD5RSIjWMCe3sPKe05J4ZS4x7ipM9FJHtoJ0Ev%2FfvM08rDbeioKKXNqOF9YqzdChxSnpsH4gsiia6e%2BSRx0RP0tV7puzp1%2FxhWt6Hmwla2Xqg8zxYyJSfZ4yia8phkG3vBsqrao7gIHqQhTP2plzT0azEEPZRlOTCbQ9eAt%2Bpl9qrWkWXDpqL6VEu09Ka7XEFyRXxp3Ok1BHvjI2yps8bHj1YKw4YVez94CrErclsn68JyL9SSiZ8GLpjG3re0KGd4rC5HK3uordLNVpL34mDtx8JruSQfXVg8vZS9dpSQHPrFVchBjp9SU8aLDkYVRS2p4i6NoZOw4p4TPC8gLDVxKqBiKi20ZXQa3Vw16CpclgNDMdq1HTelOnN13MTmwSMD4yU1hrMWVIHedaVzCiNt8jcVxGat%2B8vglpT%2FIE%2BFmY4JeRjTfrk93Z8XkuRcnhEmD%2B3pl9ST4TY22y5s03zcWnLMsI1o8pl%2BCh%2F%2B6zS9DWbaVmJVRxcv8YYVucE8Bdd6mCnVlONdqMaYQFUi4rza8SwXd%2BQ6Z%2B5cLkYp3hdAx4birPoOFoz%2BXMUbxee7oWtDQY3PHnKC2uFWqL082bWiHQWFYCvi3rVyS%2BWusqhnjv3pnsF00c7cnjRsKCjXLeK3%2B0HMUJ5YWsBTTxwJoVeOv7Vwgs2ufBPbp9knb%2BK5BOMH01mAXzjkBQHxYAPG3DUY3t52tfnXuejilvGxvGrdA%3D text/plain;charset=UTF-8 0
+INFO  2018-12-09 13:16:31,388 [19   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:31,403 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:31,406 [19   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:31,409 [19   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:31,417 [19   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:31,419 [19   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:31,483 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 97.2373ms 200 application/json
+INFO  2018-12-09 13:16:31,602 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/signalr?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FRkp3UZ8A1gKoReYXpvXHc0KFXzGY3aUxaXUOjpNPSTn4LyfFvWqGRq42yefBXGrkBTbBN3h9UXPP%2B25Rfae1rBCQrd8mQ0G3JHpGlVZBMKMD5RSIjWMCe3sPKe05J4ZS4x7ipM9FJHtoJ0Ev%2FfvM08rDbeioKKXNqOF9YqzdChxSnpsH4gsiia6e%2BSRx0RP0tV7puzp1%2FxhWt6Hmwla2Xqg8zxYyJSfZ4yia8phkG3vBsqrao7gIHqQhTP2plzT0azEEPZRlOTCbQ9eAt%2Bpl9qrWkWXDpqL6VEu09Ka7XEFyRXxp3Ok1BHvjI2yps8bHj1YKw4YVez94CrErclsn68JyL9SSiZ8GLpjG3re0KGd4rC5HK3uordLNVpL34mDtx8JruSQfXVg8vZS9dpSQHPrFVchBjp9SU8aLDkYVRS2p4i6NoZOw4p4TPC8gLDVxKqBiKi20ZXQa3Vw16CpclgNDMdq1HTelOnN13MTmwSMD4yU1hrMWVIHedaVzCiNt8jcVxGat%2B8vglpT%2FIE%2BFmY4JeRjTfrk93Z8XkuRcnhEmD%2B3pl9ST4TY22y5s03zcWnLMsI1o8pl%2BCh%2F%2B6zS9DWbaVmJVRxcv8YYVucE8Bdd6mCnVlONdqMaYQFUi4rza8SwXd%2BQ6Z%2B5cLkYp3hdAx4birPoOFoz%2BXMUbxee7oWtDQY3PHnKC2uFWqL082bWiHQWFYCvi3rVyS%2BWusqhnjv3pnsF00c7cnjRsKCjXLeK3%2B0HMUJ5YWsBTTxwJoVeOv7Vwgs2ufBPbp9knb%2BK5BOMH01mAXzjkBQHxYAPG3DUY3t52tfnXuejilvGxvGrdA%3D&id=XPVTdWfsVp4xz6264oGSQQ  
+INFO  2018-12-09 13:16:31,605 [19   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:31,610 [19   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:31,612 [19   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:31,615 [19   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:31,617 [19   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:31,619 [19   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:31,772 [20   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2018-12-09 13:16:31,797 [20   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"XPVTdWfsVp4xz6264oGSQQ","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2018-12-09T13:16:31.7937541+03:00","Properties":{}}
+DEBUG 2018-12-09 13:16:31,847 [20   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: XPVTdWfsVp4xz6264oGSQQ
+INFO  2018-12-09 13:16:41,070 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false  
+INFO  2018-12-09 13:16:41,073 [36   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:41,074 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.192ms 204 
+INFO  2018-12-09 13:16:41,094 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:16:41,096 [35   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:41,098 [35   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:41,100 [35   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:41,102 [35   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:41,104 [35   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:41,107 [35   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:41,125 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:16:41,127 [35   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:41,683 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:16:41,867 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2018-12-09 13:16:41,870 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2018-12-09 13:16:41,873 [35   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:41,875 [40   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:41,883 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.6974ms 204 
+INFO  2018-12-09 13:16:41,884 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.5456ms 204 
+INFO  2018-12-09 13:16:41,894 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2018-12-09 13:16:41,896 [35   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:41,899 [35   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-12-09 13:16:41,901 [50   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+WARN  2018-12-09 13:16:41,903 [35   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:16:41,905 [50   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2018-12-09 13:16:41,907 [35   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:41,909 [50   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:41,911 [35   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:41,913 [50   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:41,915 [35   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:41,917 [50   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:41,919 [50   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:41,923 [50   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:41,933 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllPermissions", controller = "Role"}. Executing action CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application)
+INFO  2018-12-09 13:16:41,935 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing action CompareX.Roles.RoleAppService.GetAll (CompareX.Application)
+INFO  2018-12-09 13:16:41,937 [50   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:41,939 [35   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:42,005 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 319.0976ms.
+INFO  2018-12-09 13:16:42,172 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:16:42,179 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Roles.RoleAppService.GetAll (CompareX.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - Validation state: Valid
+INFO  2018-12-09 13:16:42,181 [40   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:42,189 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 14.0179ms.
+INFO  2018-12-09 13:16:42,195 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 1067.632ms
+INFO  2018-12-09 13:16:42,199 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1104.0892ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:42,202 [43   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:42,208 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application) in 271.47ms
+INFO  2018-12-09 13:16:42,210 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 310.6351ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:42,329 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Roles.RoleAppService.GetAll (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 147.2416ms.
+INFO  2018-12-09 13:16:42,338 [40   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:42,345 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Roles.RoleAppService.GetAll (CompareX.Application) in 407.3677ms
+INFO  2018-12-09 13:16:42,348 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 453.775ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:42,583 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2018-12-09 13:16:42,585 [44   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:42,587 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetRoles  
+INFO  2018-12-09 13:16:42,590 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.4555ms 204 
+INFO  2018-12-09 13:16:42,592 [35   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:42,594 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.4414ms 204 
+INFO  2018-12-09 13:16:42,606 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2018-12-09 13:16:42,608 [36   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:42,611 [36   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-12-09 13:16:42,613 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetRoles application/json 
+WARN  2018-12-09 13:16:42,616 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:16:42,618 [44   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2018-12-09 13:16:42,620 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:42,622 [44   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:42,625 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:42,627 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:42,629 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:42,632 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:42,634 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:42,636 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:42,648 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "User"}. Executing action CompareX.Users.UserAppService.GetAll (CompareX.Application)
+INFO  2018-12-09 13:16:42,650 [36   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:42,653 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "User"}. Executing action CompareX.Users.UserAppService.GetRoles (CompareX.Application)
+INFO  2018-12-09 13:16:42,655 [44   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:42,885 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Users.UserAppService.GetRoles (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:16:42,890 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Users.UserAppService.GetAll (CompareX.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - Validation state: Valid
+INFO  2018-12-09 13:16:42,918 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Users.UserAppService.GetRoles (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 31.0627ms.
+INFO  2018-12-09 13:16:42,930 [43   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:42,933 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Users.UserAppService.GetRoles (CompareX.Application) in 278.6957ms
+INFO  2018-12-09 13:16:42,936 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 323.4758ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:43,033 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Users.UserAppService.GetAll (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 141.2722ms.
+INFO  2018-12-09 13:16:43,046 [44   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:43,052 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Users.UserAppService.GetAll (CompareX.Application) in 402.2933ms
+INFO  2018-12-09 13:16:43,056 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 450.1032ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:43,980 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2018-12-09 13:16:43,983 [35   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:43,985 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetRoles application/json 
+INFO  2018-12-09 13:16:43,987 [35   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-12-09 13:16:43,989 [43   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2018-12-09 13:16:43,991 [35   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:16:43,993 [43   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:43,996 [35   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:43,997 [43   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:44,000 [35   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:44,001 [43   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:44,003 [35   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:44,006 [43   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:44,008 [43   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:44,012 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "User"}. Executing action CompareX.Users.UserAppService.GetAll (CompareX.Application)
+INFO  2018-12-09 13:16:44,014 [35   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:44,016 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "User"}. Executing action CompareX.Users.UserAppService.GetRoles (CompareX.Application)
+INFO  2018-12-09 13:16:44,018 [43   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:44,021 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Users.UserAppService.GetAll (CompareX.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - Validation state: Valid
+INFO  2018-12-09 13:16:44,024 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Users.UserAppService.GetRoles (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:16:44,031 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Users.UserAppService.GetRoles (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.4286ms.
+INFO  2018-12-09 13:16:44,038 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Users.UserAppService.GetAll (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 14.96ms.
+INFO  2018-12-09 13:16:44,045 [40   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:44,047 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Users.UserAppService.GetRoles (CompareX.Application) in 29.565ms
+INFO  2018-12-09 13:16:44,050 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.0567ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:44,052 [35   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:44,054 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Users.UserAppService.GetAll (CompareX.Application) in 39.6916ms
+INFO  2018-12-09 13:16:44,057 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 76.3374ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:44,698 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2018-12-09 13:16:44,700 [36   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:44,702 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+INFO  2018-12-09 13:16:44,704 [36   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-12-09 13:16:44,706 [43   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2018-12-09 13:16:44,708 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:16:44,710 [43   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:44,712 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:44,715 [43   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:44,716 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:44,718 [43   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:44,720 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:44,722 [43   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:44,724 [43   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:44,729 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing action CompareX.Roles.RoleAppService.GetAll (CompareX.Application)
+INFO  2018-12-09 13:16:44,731 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllPermissions", controller = "Role"}. Executing action CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application)
+INFO  2018-12-09 13:16:44,734 [36   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:44,736 [43   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:44,739 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Roles.RoleAppService.GetAll (CompareX.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - Validation state: Valid
+INFO  2018-12-09 13:16:44,742 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:16:44,746 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.9437ms.
+INFO  2018-12-09 13:16:44,754 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Roles.RoleAppService.GetAll (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12.015ms.
+INFO  2018-12-09 13:16:44,762 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:44,764 [43   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:44,766 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application) in 29.936ms
+INFO  2018-12-09 13:16:44,768 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Roles.RoleAppService.GetAll (CompareX.Application) in 35.3047ms
+INFO  2018-12-09 13:16:44,772 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 68.7718ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:44,774 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 74.272ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:45,602 [36   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:16:45,604 [36   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:45,607 [36   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:45,609 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:45,611 [36   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:45,613 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:45,615 [36   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:45,619 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:16:45,621 [36   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:45,626 [36   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:16:45,633 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.1995ms.
+INFO  2018-12-09 13:16:45,642 [35   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:45,644 [35   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 23.2024ms
+INFO  2018-12-09 13:16:45,646 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.286ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:16:49,367 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false  
+INFO  2018-12-09 13:16:49,370 [44   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:49,372 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.1629ms 204 
+INFO  2018-12-09 13:16:49,382 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:16:49,383 [44   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:49,386 [44   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:16:49,388 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:49,390 [44   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:16:49,393 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:16:49,394 [44   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:16:49,399 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:16:49,400 [44   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:16:49,406 [44   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:16:49,412 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.8896ms.
+INFO  2018-12-09 13:16:49,422 [43   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:16:49,424 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 23.1689ms
+INFO  2018-12-09 13:16:49,426 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.1696ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:22,680 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false  
+INFO  2018-12-09 13:21:22,681 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:22,685 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.8887ms 204 
+INFO  2018-12-09 13:21:22,694 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:22,695 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:22,697 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:22,699 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:22,701 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:22,703 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:22,704 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:22,708 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:22,710 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:22,713 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:22,724 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9.0206ms.
+INFO  2018-12-09 13:21:22,732 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:22,734 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 23.7309ms
+INFO  2018-12-09 13:21:22,737 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.2157ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:27,602 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=6e94d2d3-2f28-4f59-bd08-86bcf8af1658  
+INFO  2018-12-09 13:21:27,604 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:27,605 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.52ms 204 
+INFO  2018-12-09 13:21:27,613 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=6e94d2d3-2f28-4f59-bd08-86bcf8af1658 application/json 
+INFO  2018-12-09 13:21:27,615 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:27,617 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:27,618 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:27,619 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:27,621 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:27,622 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:27,629 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDetailAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application)
+INFO  2018-12-09 13:21:27,630 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:27,636 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Guid]) - Validation state: Valid
+INFO  2018-12-09 13:21:27,730 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 92.4281ms.
+INFO  2018-12-09 13:21:27,742 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:27,747 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) in 116.8998ms
+INFO  2018-12-09 13:21:27,750 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 136.7791ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:29,461 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false  
+INFO  2018-12-09 13:21:29,462 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:29,465 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.9168ms 204 
+INFO  2018-12-09 13:21:29,475 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:29,476 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:29,478 [48   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:29,480 [48   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:29,482 [48   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:29,483 [48   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:29,484 [48   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:29,487 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:29,489 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:29,492 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:29,497 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.5946ms.
+INFO  2018-12-09 13:21:29,505 [45   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:29,507 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 17.9946ms
+INFO  2018-12-09 13:21:29,508 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.8162ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:30,934 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=ab84ddca-7278-4704-9b9e-c60bbd5b7e24  
+INFO  2018-12-09 13:21:30,935 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:30,937 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.3677ms 204 
+INFO  2018-12-09 13:21:30,945 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=ab84ddca-7278-4704-9b9e-c60bbd5b7e24 application/json 
+INFO  2018-12-09 13:21:30,947 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:30,948 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:30,950 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:30,952 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:30,953 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:30,954 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:30,957 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDetailAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application)
+INFO  2018-12-09 13:21:30,959 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:30,962 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Guid]) - Validation state: Valid
+INFO  2018-12-09 13:21:30,969 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.8467ms.
+INFO  2018-12-09 13:21:30,978 [3    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:30,980 [3    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) in 20.7282ms
+INFO  2018-12-09 13:21:30,982 [3    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.7762ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:31,651 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:31,654 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:31,657 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:31,659 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:31,661 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:31,664 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:31,666 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:31,670 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:31,671 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:31,676 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:31,682 [3    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.8998ms.
+INFO  2018-12-09 13:21:31,688 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:31,689 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 17.8976ms
+INFO  2018-12-09 13:21:31,691 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.6981ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:37,433 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=6e94d2d3-2f28-4f59-bd08-86bcf8af1658  
+INFO  2018-12-09 13:21:37,434 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:37,436 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.1747ms 204 
+INFO  2018-12-09 13:21:37,444 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=6e94d2d3-2f28-4f59-bd08-86bcf8af1658 application/json 
+INFO  2018-12-09 13:21:37,446 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:37,447 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:37,449 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:37,450 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:37,451 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:37,453 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:37,456 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDetailAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application)
+INFO  2018-12-09 13:21:37,458 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:37,463 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Guid]) - Validation state: Valid
+INFO  2018-12-09 13:21:37,469 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.0766ms.
+INFO  2018-12-09 13:21:37,479 [4    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:37,481 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) in 22.637ms
+INFO  2018-12-09 13:21:37,482 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 38.7059ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:38,593 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false  
+INFO  2018-12-09 13:21:38,595 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:38,597 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.5064ms 204 
+INFO  2018-12-09 13:21:38,606 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:38,607 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:38,609 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:38,611 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:38,613 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:38,614 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:38,615 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:38,618 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:38,620 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:38,623 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:38,628 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.2191ms.
+INFO  2018-12-09 13:21:38,638 [6    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:38,639 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 19.4312ms
+INFO  2018-12-09 13:21:38,641 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.3852ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:39,573 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=6e94d2d3-2f28-4f59-bd08-86bcf8af1658 application/json 
+INFO  2018-12-09 13:21:39,576 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:39,578 [45   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:39,580 [45   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:39,582 [45   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:39,584 [45   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:39,586 [45   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:39,589 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDetailAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application)
+INFO  2018-12-09 13:21:39,591 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:39,595 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Guid]) - Validation state: Valid
+INFO  2018-12-09 13:21:39,600 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.0819ms.
+INFO  2018-12-09 13:21:39,607 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:39,609 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) in 17.5049ms
+INFO  2018-12-09 13:21:39,611 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 37.6761ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:42,279 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:42,281 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:42,283 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:42,285 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:42,286 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:42,288 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:42,290 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:42,293 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:42,295 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:42,297 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:42,304 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.5381ms.
+INFO  2018-12-09 13:21:42,311 [45   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:42,313 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 18.4707ms
+INFO  2018-12-09 13:21:42,315 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.157ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:43,643 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=2914c451-2566-4075-8add-4f65d77066cb  
+INFO  2018-12-09 13:21:43,645 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:43,647 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.7692ms 204 
+INFO  2018-12-09 13:21:43,654 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=2914c451-2566-4075-8add-4f65d77066cb application/json 
+INFO  2018-12-09 13:21:43,656 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:43,658 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:43,659 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:43,661 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:43,662 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:43,664 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:43,667 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDetailAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application)
+INFO  2018-12-09 13:21:43,668 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:43,672 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Guid]) - Validation state: Valid
+INFO  2018-12-09 13:21:43,678 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.717ms.
+INFO  2018-12-09 13:21:43,685 [4    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:43,687 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) in 18.5289ms
+INFO  2018-12-09 13:21:43,689 [4    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.0351ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:48,807 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false  
+INFO  2018-12-09 13:21:48,809 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:48,810 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.0189ms 204 
+INFO  2018-12-09 13:21:48,817 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:48,818 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:48,820 [45   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:48,822 [45   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:48,823 [45   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:48,825 [45   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:48,826 [45   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:48,829 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:48,831 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:48,834 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:48,841 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.2499ms.
+INFO  2018-12-09 13:21:48,851 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:48,853 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 22.0038ms
+INFO  2018-12-09 13:21:48,855 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 37.8138ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:49,725 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=2914c451-2566-4075-8add-4f65d77066cb  
+INFO  2018-12-09 13:21:49,726 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:49,728 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.7396ms 204 
+INFO  2018-12-09 13:21:49,741 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=2914c451-2566-4075-8add-4f65d77066cb application/json 
+INFO  2018-12-09 13:21:49,743 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:49,744 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:49,746 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:49,747 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:49,748 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:49,750 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:49,754 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDetailAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application)
+INFO  2018-12-09 13:21:49,756 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:49,761 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Guid]) - Validation state: Valid
+INFO  2018-12-09 13:21:49,767 [3    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.0426ms.
+INFO  2018-12-09 13:21:49,774 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:49,776 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) in 19.8162ms
+INFO  2018-12-09 13:21:49,778 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.6496ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:50,613 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:50,614 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:50,616 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:50,618 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:50,620 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:50,621 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:50,624 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:50,627 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:50,629 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:50,632 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:50,637 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.6019ms.
+INFO  2018-12-09 13:21:50,649 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:50,651 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 21.5675ms
+INFO  2018-12-09 13:21:50,653 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.5573ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:51,297 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=ab84ddca-7278-4704-9b9e-c60bbd5b7e24  
+INFO  2018-12-09 13:21:51,299 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:51,300 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.8989ms 204 
+INFO  2018-12-09 13:21:51,309 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=ab84ddca-7278-4704-9b9e-c60bbd5b7e24 application/json 
+INFO  2018-12-09 13:21:51,311 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:51,313 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:51,314 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:51,316 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:51,317 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:51,318 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:51,323 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDetailAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application)
+INFO  2018-12-09 13:21:51,324 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:51,327 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Guid]) - Validation state: Valid
+INFO  2018-12-09 13:21:51,333 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.8783ms.
+INFO  2018-12-09 13:21:51,341 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:51,342 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) in 17.9888ms
+INFO  2018-12-09 13:21:51,344 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.0797ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:52,298 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:52,300 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:52,302 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:52,303 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:52,305 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:52,307 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:52,309 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:52,313 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:52,315 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:52,318 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:52,324 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.6913ms.
+INFO  2018-12-09 13:21:52,329 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:52,331 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 16.2686ms
+INFO  2018-12-09 13:21:52,333 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.768ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:53,220 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=6e94d2d3-2f28-4f59-bd08-86bcf8af1658  
+INFO  2018-12-09 13:21:53,221 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:53,223 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.8976ms 204 
+INFO  2018-12-09 13:21:53,232 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetDetailAsync?Id=6e94d2d3-2f28-4f59-bd08-86bcf8af1658 application/json 
+INFO  2018-12-09 13:21:53,234 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:53,236 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:53,238 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:53,239 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:53,241 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:53,242 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:53,245 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDetailAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application)
+INFO  2018-12-09 13:21:53,246 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:53,250 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Guid]) - Validation state: Valid
+INFO  2018-12-09 13:21:53,258 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.904ms.
+INFO  2018-12-09 13:21:53,263 [45   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:53,265 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetDetailAsync (CompareX.Application) in 18.8591ms
+INFO  2018-12-09 13:21:53,267 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.7156ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:56,127 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false  
+INFO  2018-12-09 13:21:56,128 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:56,130 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.2707ms 204 
+INFO  2018-12-09 13:21:56,139 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:56,140 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:56,142 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:56,144 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:56,145 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:56,146 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:56,148 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:56,152 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:56,153 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:56,156 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:56,161 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.5423ms.
+INFO  2018-12-09 13:21:56,171 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:56,173 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 19.9044ms
+INFO  2018-12-09 13:21:56,174 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 36.1663ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:58,119 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2018-12-09 13:21:58,121 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:58,123 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.9093ms 204 
+INFO  2018-12-09 13:21:58,125 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2018-12-09 13:21:58,127 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:58,129 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.5209ms 204 
+INFO  2018-12-09 13:21:58,135 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2018-12-09 13:21:58,137 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:58,139 [45   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-12-09 13:21:58,140 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+WARN  2018-12-09 13:21:58,142 [45   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:21:58,143 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2018-12-09 13:21:58,146 [45   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:58,148 [45   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:21:58,149 [48   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:58,151 [45   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:58,153 [48   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:58,155 [48   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:58,157 [48   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:58,158 [48   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:58,161 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing action CompareX.Roles.RoleAppService.GetAll (CompareX.Application)
+INFO  2018-12-09 13:21:58,163 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:58,165 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllPermissions", controller = "Role"}. Executing action CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application)
+INFO  2018-12-09 13:21:58,167 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:58,169 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Roles.RoleAppService.GetAll (CompareX.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - Validation state: Valid
+INFO  2018-12-09 13:21:58,172 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:21:58,177 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.1345ms.
+INFO  2018-12-09 13:21:58,180 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Roles.RoleAppService.GetAll (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9.0991ms.
+INFO  2018-12-09 13:21:58,187 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:58,189 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Roles.RoleAppService.GetAll (CompareX.Application) in 26.638ms
+INFO  2018-12-09 13:21:58,191 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:58,192 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 57.2218ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:58,194 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application) in 26.1498ms
+INFO  2018-12-09 13:21:58,196 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 56.0935ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:58,699 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:21:58,702 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:58,704 [48   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:58,706 [48   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:58,707 [48   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:58,709 [48   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:58,711 [48   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:58,715 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:21:58,717 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:58,721 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:21:58,726 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.0593ms.
+INFO  2018-12-09 13:21:58,737 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:58,739 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 22.9318ms
+INFO  2018-12-09 13:21:58,741 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.6346ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:59,329 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2018-12-09 13:21:59,332 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:59,334 [48   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-12-09 13:21:59,336 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json 
+WARN  2018-12-09 13:21:59,338 [48   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:21:59,340 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2018-12-09 13:21:59,342 [48   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:59,344 [45   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:59,346 [48   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:59,347 [45   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:59,348 [48   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:59,350 [45   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:59,352 [45   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:59,353 [45   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:59,356 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing action CompareX.Roles.RoleAppService.GetAll (CompareX.Application)
+INFO  2018-12-09 13:21:59,358 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:59,360 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAllPermissions", controller = "Role"}. Executing action CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application)
+INFO  2018-12-09 13:21:59,361 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:59,363 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Roles.RoleAppService.GetAll (CompareX.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - Validation state: Valid
+INFO  2018-12-09 13:21:59,366 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:21:59,369 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.5423ms.
+INFO  2018-12-09 13:21:59,378 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Roles.RoleAppService.GetAll (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 13.3856ms.
+INFO  2018-12-09 13:21:59,380 [6    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:59,382 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Roles.RoleAppService.GetAllPermissions (CompareX.Application) in 20.3408ms
+INFO  2018-12-09 13:21:59,385 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.5473ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:59,391 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:59,393 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Roles.RoleAppService.GetAll (CompareX.Application) in 34.685ms
+INFO  2018-12-09 13:21:59,394 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 65.6169ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:59,891 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2018-12-09 13:21:59,893 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:59,894 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetRoles  
+INFO  2018-12-09 13:21:59,896 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.1386ms 204 
+INFO  2018-12-09 13:21:59,897 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:59,900 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.3803ms 204 
+INFO  2018-12-09 13:21:59,907 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2018-12-09 13:21:59,909 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:59,911 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetRoles application/json 
+INFO  2018-12-09 13:21:59,912 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-12-09 13:21:59,914 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2018-12-09 13:21:59,915 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:59,917 [12   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:59,919 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:21:59,920 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:59,922 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:59,923 [12   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:59,924 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:21:59,926 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:21:59,927 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:21:59,930 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "User"}. Executing action CompareX.Users.UserAppService.GetAll (CompareX.Application)
+INFO  2018-12-09 13:21:59,931 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "User"}. Executing action CompareX.Users.UserAppService.GetRoles (CompareX.Application)
+INFO  2018-12-09 13:21:59,933 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:59,935 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:21:59,938 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Users.UserAppService.GetRoles (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:21:59,940 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Users.UserAppService.GetAll (CompareX.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - Validation state: Valid
+INFO  2018-12-09 13:21:59,943 [4    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Users.UserAppService.GetRoles (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.1495ms.
+INFO  2018-12-09 13:21:59,950 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Users.UserAppService.GetAll (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.0838ms.
+INFO  2018-12-09 13:21:59,952 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:59,954 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Users.UserAppService.GetRoles (CompareX.Application) in 19.6145ms
+INFO  2018-12-09 13:21:59,956 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 44.9216ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:21:59,962 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:21:59,964 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Users.UserAppService.GetAll (CompareX.Application) in 31.6727ms
+INFO  2018-12-09 13:21:59,967 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.0865ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:22:21,712 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false  
+INFO  2018-12-09 13:22:21,714 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:21,715 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2.8775ms 204 
+INFO  2018-12-09 13:22:21,726 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Case/GetListAsync?IncludeCanceledEvents=false application/json 
+INFO  2018-12-09 13:22:21,728 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:21,729 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:22:21,731 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:22:21,733 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:22:21,734 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:22:21,735 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:22:21,739 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetListAsync", controller = "Case"}. Executing action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application)
+INFO  2018-12-09 13:22:21,741 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:21,744 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) with arguments (CompareX.Case.Dto.GetCaseListInput) - Validation state: Valid
+INFO  2018-12-09 13:22:21,749 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Case.CaseAppService.GetListAsync (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.6121ms.
+INFO  2018-12-09 13:22:21,756 [45   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:22:21,758 [45   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Case.CaseAppService.GetListAsync (CompareX.Application) in 16.8436ms
+INFO  2018-12-09 13:22:21,759 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.6145ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:22:48,419 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Configuration/ChangeUiTheme  
+INFO  2018-12-09 13:22:48,421 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:48,424 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.4814ms 204 
+INFO  2018-12-09 13:22:48,432 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Configuration/ChangeUiTheme application/json 17
+INFO  2018-12-09 13:22:48,434 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:48,435 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:22:48,436 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:22:48,438 [10   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:22:48,439 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:22:48,440 [10   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:22:48,445 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "ChangeUiTheme", controller = "Configuration"}. Executing action CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application)
+INFO  2018-12-09 13:22:48,446 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:48,489 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application) with arguments (CompareX.Configuration.Dto.ChangeUiThemeInput) - Validation state: Valid
+INFO  2018-12-09 13:22:48,501 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 10.8926ms.
+INFO  2018-12-09 13:22:48,511 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:22:48,512 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application) in 65.4259ms
+INFO  2018-12-09 13:22:48,514 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 81.3536ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:22:50,787 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Configuration/ChangeUiTheme application/json 21
+INFO  2018-12-09 13:22:50,793 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:50,794 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:22:50,804 [51   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:22:50,805 [51   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:22:50,806 [51   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:22:50,808 [51   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:22:50,810 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "ChangeUiTheme", controller = "Configuration"}. Executing action CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application)
+INFO  2018-12-09 13:22:50,812 [51   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:50,815 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application) with arguments (CompareX.Configuration.Dto.ChangeUiThemeInput) - Validation state: Valid
+INFO  2018-12-09 13:22:50,836 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 19.2795ms.
+INFO  2018-12-09 13:22:50,860 [10   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:22:50,865 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application) in 49.5427ms
+INFO  2018-12-09 13:22:50,869 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 84.9168ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:22:52,131 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Configuration/ChangeUiTheme application/json 17
+INFO  2018-12-09 13:22:52,133 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:52,134 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:22:52,139 [6    ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:22:52,140 [6    ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:22:52,142 [6    ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:22:52,143 [6    ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:22:52,146 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "ChangeUiTheme", controller = "Configuration"}. Executing action CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application)
+INFO  2018-12-09 13:22:52,147 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:22:52,150 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application) with arguments (CompareX.Configuration.Dto.ChangeUiThemeInput) - Validation state: Valid
+INFO  2018-12-09 13:22:52,157 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 5.4981ms.
+INFO  2018-12-09 13:22:52,174 [56   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:22:52,176 [56   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Configuration.ConfigurationAppService.ChangeUiTheme (CompareX.Application) in 28.7229ms
+INFO  2018-12-09 13:22:52,178 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 46.56ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:23:12,430 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10  
+INFO  2018-12-09 13:23:12,432 [60   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:12,434 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetRoles  
+INFO  2018-12-09 13:23:12,436 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.1037ms 204 
+INFO  2018-12-09 13:23:12,437 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:12,439 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.9553ms 204 
+INFO  2018-12-09 13:23:12,450 [56   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10 application/json 
+INFO  2018-12-09 13:23:12,452 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetRoles application/json 
+INFO  2018-12-09 13:23:12,453 [56   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:12,454 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:12,455 [56   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2018-12-09 13:23:12,457 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:23:12,465 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:12,466 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:12,467 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:12,468 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:12,469 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:12,471 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:12,472 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:12,473 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:23:12,476 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "User"}. Executing action CompareX.Users.UserAppService.GetAll (CompareX.Application)
+INFO  2018-12-09 13:23:12,478 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetRoles", controller = "User"}. Executing action CompareX.Users.UserAppService.GetRoles (CompareX.Application)
+INFO  2018-12-09 13:23:12,479 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:12,481 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:12,483 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Users.UserAppService.GetAll (CompareX.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - Validation state: Valid
+INFO  2018-12-09 13:23:12,485 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Users.UserAppService.GetRoles (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:23:12,491 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Users.UserAppService.GetRoles (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.688ms.
+INFO  2018-12-09 13:23:12,499 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Users.UserAppService.GetAll (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 13.4826ms.
+INFO  2018-12-09 13:23:12,501 [61   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:23:12,503 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Users.UserAppService.GetRoles (CompareX.Application) in 22.9929ms
+INFO  2018-12-09 13:23:12,505 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 53.7677ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:23:12,511 [60   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:23:12,514 [60   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Users.UserAppService.GetAll (CompareX.Application) in 34.525ms
+INFO  2018-12-09 13:23:12,516 [60   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 65.5093ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:23:38,572 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2018-12-09 13:23:38,576 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.6455ms 200 text/html
+INFO  2018-12-09 13:23:38,607 [75   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2018-12-09 13:23:38,610 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2018-12-09 13:23:38,631 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2018-12-09 13:23:38,662 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2018-12-09 13:23:38,670 [70   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2018-12-09 13:23:38,674 [73   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2018-12-09 13:23:38,681 [70   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.4172ms 200 text/css
+INFO  2018-12-09 13:23:38,686 [77   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'C:\Users\ezozkme\Source\Repos\comparexhost\src\CompareX.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2018-12-09 13:23:38,691 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.6385ms 200 application/javascript
+INFO  2018-12-09 13:23:38,694 [73   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'C:\Users\ezozkme\Source\Repos\comparexhost\src\CompareX.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2018-12-09 13:23:38,697 [73   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 23.36ms 200 application/javascript
+INFO  2018-12-09 13:23:38,745 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2018-12-09 13:23:38,748 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 123.5704ms 200 application/javascript
+INFO  2018-12-09 13:23:38,864 [28   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2018-12-09 13:23:38,866 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 261.726ms 200 application/javascript
+INFO  2018-12-09 13:23:38,979 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2018-12-09 13:23:39,817 [63   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js.map'. Physical path: 'N/A'
+INFO  2018-12-09 13:23:39,818 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 839.2475ms 200 text/plain
+INFO  2018-12-09 13:23:40,134 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2018-12-09 13:23:40,435 [67   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js.map'. Physical path: 'N/A'
+INFO  2018-12-09 13:23:40,437 [67   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 303.6179ms 200 text/plain
+INFO  2018-12-09 13:23:40,582 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2018-12-09 13:23:40,586 [28   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:23:40,590 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:23:40,590 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+WARN  2018-12-09 13:23:40,592 [28   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:40,597 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+INFO  2018-12-09 13:23:40,597 [64   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+WARN  2018-12-09 13:23:40,600 [28   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:23:40,601 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.3442ms 200 image/png
+INFO  2018-12-09 13:23:40,604 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-16x16.png  
+INFO  2018-12-09 13:23:40,606 [63   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2018-12-09 13:23:40,608 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.2846ms 200 image/png
+INFO  2018-12-09 13:23:40,620 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 38.6429ms 200 application/json;charset=utf-8
+DEBUG 2018-12-09 13:23:43,311 [72   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: XPVTdWfsVp4xz6264oGSQQ
+INFO  2018-12-09 13:23:43,324 [72   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 431722.2225ms 101 
+INFO  2018-12-09 13:23:44,494 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2018-12-09 13:23:44,499 [51   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:44,501 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.4591ms 204 
+INFO  2018-12-09 13:23:44,524 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2018-12-09 13:23:44,527 [66   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:44,531 [66   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:23:44,534 [66   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:44,535 [66   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:44,537 [66   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:44,539 [66   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:44,541 [66   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:44,542 [66   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:23:44,546 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2018-12-09 13:23:44,549 [66   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:44,552 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2018-12-09 13:23:44,559 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 4.72ms.
+INFO  2018-12-09 13:23:44,568 [71   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:23:44,570 [71   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 21.8632ms
+INFO  2018-12-09 13:23:44,571 [71   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.1027ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:23:44,583 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2018-12-09 13:23:44,585 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:44,587 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.4586ms 204 
+INFO  2018-12-09 13:23:44,592 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2018-12-09 13:23:44,594 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:44,595 [63   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:23:44,598 [63   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:44,600 [63   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:44,602 [63   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:44,603 [63   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:23:44,607 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application)
+INFO  2018-12-09 13:23:44,608 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:44,611 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application) - Validation state: Valid
+INFO  2018-12-09 13:23:44,618 [77   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.4109ms.
+INFO  2018-12-09 13:23:44,620 [77   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2018-12-09 13:23:44,621 [77   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action CompareX.Sessions.SessionAppService.GetCurrentLoginInformations (CompareX.Application) in 13.2741ms
+INFO  2018-12-09 13:23:44,623 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.9643ms 200 application/json; charset=utf-8
+INFO  2018-12-09 13:23:45,421 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/signalr/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FRkp3UZ8A1gKoReYXpvXHc0KFXzGY3aUxaXUOjpNPSTn4LyfFvWqGRq42yefBXGrkBTbBN3h9UXPP%2B25Rfae1rBCQrd8mQ0G3JHpGlVZBMKMD5RSIjWMCe3sPKe05J4ZS4x7ipM9FJHtoJ0Ev%2FfvM08rDbeioKKXNqOF9YqzdChxSnpsH4gsiia6e%2BSRx0RP0tV7puzp1%2FxhWt6Hmwla2Xqg8zxYyJSfZ4yia8phkG3vBsqrao7gIHqQhTP2plzT0azEEPZRlOTCbQ9eAt%2Bpl9qrWkWXDpqL6VEu09Ka7XEFyRXxp3Ok1BHvjI2yps8bHj1YKw4YVez94CrErclsn68JyL9SSiZ8GLpjG3re0KGd4rC5HK3uordLNVpL34mDtx8JruSQfXVg8vZS9dpSQHPrFVchBjp9SU8aLDkYVRS2p4i6NoZOw4p4TPC8gLDVxKqBiKi20ZXQa3Vw16CpclgNDMdq1HTelOnN13MTmwSMD4yU1hrMWVIHedaVzCiNt8jcVxGat%2B8vglpT%2FIE%2BFmY4JeRjTfrk93Z8XkuRcnhEmD%2B3pl9ST4TY22y5s03zcWnLMsI1o8pl%2BCh%2F%2B6zS9DWbaVmJVRxcv8YYVucE8Bdd6mCnVlONdqMaYQFUi4rza8SwXd%2BQ6Z%2B5cLkYp3hdAx4birPoOFoz%2BXMUbxee7oWtDQY3PHnKC2uFWqL082bWiHQWFYCvi3rVyS%2BWusqhnjv3pnsF00c7cnjRsKCjXLeK3%2B0HMUJ5YWsBTTxwJoVeOv7Vwgs2ufBPbp9knb%2BK5BOMH01mAXzjkBQHxYAPG3DUY3t52tfnXuejilvGxvGrdA%3D  
+INFO  2018-12-09 13:23:45,423 [77   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:45,424 [77   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.3958ms 204 
+INFO  2018-12-09 13:23:45,461 [71   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/signalr/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FRkp3UZ8A1gKoReYXpvXHc0KFXzGY3aUxaXUOjpNPSTn4LyfFvWqGRq42yefBXGrkBTbBN3h9UXPP%2B25Rfae1rBCQrd8mQ0G3JHpGlVZBMKMD5RSIjWMCe3sPKe05J4ZS4x7ipM9FJHtoJ0Ev%2FfvM08rDbeioKKXNqOF9YqzdChxSnpsH4gsiia6e%2BSRx0RP0tV7puzp1%2FxhWt6Hmwla2Xqg8zxYyJSfZ4yia8phkG3vBsqrao7gIHqQhTP2plzT0azEEPZRlOTCbQ9eAt%2Bpl9qrWkWXDpqL6VEu09Ka7XEFyRXxp3Ok1BHvjI2yps8bHj1YKw4YVez94CrErclsn68JyL9SSiZ8GLpjG3re0KGd4rC5HK3uordLNVpL34mDtx8JruSQfXVg8vZS9dpSQHPrFVchBjp9SU8aLDkYVRS2p4i6NoZOw4p4TPC8gLDVxKqBiKi20ZXQa3Vw16CpclgNDMdq1HTelOnN13MTmwSMD4yU1hrMWVIHedaVzCiNt8jcVxGat%2B8vglpT%2FIE%2BFmY4JeRjTfrk93Z8XkuRcnhEmD%2B3pl9ST4TY22y5s03zcWnLMsI1o8pl%2BCh%2F%2B6zS9DWbaVmJVRxcv8YYVucE8Bdd6mCnVlONdqMaYQFUi4rza8SwXd%2BQ6Z%2B5cLkYp3hdAx4birPoOFoz%2BXMUbxee7oWtDQY3PHnKC2uFWqL082bWiHQWFYCvi3rVyS%2BWusqhnjv3pnsF00c7cnjRsKCjXLeK3%2B0HMUJ5YWsBTTxwJoVeOv7Vwgs2ufBPbp9knb%2BK5BOMH01mAXzjkBQHxYAPG3DUY3t52tfnXuejilvGxvGrdA%3D text/plain;charset=UTF-8 0
+INFO  2018-12-09 13:23:45,464 [71   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:45,468 [71   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:23:45,472 [71   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:45,474 [71   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:45,476 [71   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:45,477 [71   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:23:45,480 [71   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.9423ms 200 application/json
+INFO  2018-12-09 13:23:45,497 [71   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/signalr?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FRkp3UZ8A1gKoReYXpvXHc0KFXzGY3aUxaXUOjpNPSTn4LyfFvWqGRq42yefBXGrkBTbBN3h9UXPP%2B25Rfae1rBCQrd8mQ0G3JHpGlVZBMKMD5RSIjWMCe3sPKe05J4ZS4x7ipM9FJHtoJ0Ev%2FfvM08rDbeioKKXNqOF9YqzdChxSnpsH4gsiia6e%2BSRx0RP0tV7puzp1%2FxhWt6Hmwla2Xqg8zxYyJSfZ4yia8phkG3vBsqrao7gIHqQhTP2plzT0azEEPZRlOTCbQ9eAt%2Bpl9qrWkWXDpqL6VEu09Ka7XEFyRXxp3Ok1BHvjI2yps8bHj1YKw4YVez94CrErclsn68JyL9SSiZ8GLpjG3re0KGd4rC5HK3uordLNVpL34mDtx8JruSQfXVg8vZS9dpSQHPrFVchBjp9SU8aLDkYVRS2p4i6NoZOw4p4TPC8gLDVxKqBiKi20ZXQa3Vw16CpclgNDMdq1HTelOnN13MTmwSMD4yU1hrMWVIHedaVzCiNt8jcVxGat%2B8vglpT%2FIE%2BFmY4JeRjTfrk93Z8XkuRcnhEmD%2B3pl9ST4TY22y5s03zcWnLMsI1o8pl%2BCh%2F%2B6zS9DWbaVmJVRxcv8YYVucE8Bdd6mCnVlONdqMaYQFUi4rza8SwXd%2BQ6Z%2B5cLkYp3hdAx4birPoOFoz%2BXMUbxee7oWtDQY3PHnKC2uFWqL082bWiHQWFYCvi3rVyS%2BWusqhnjv3pnsF00c7cnjRsKCjXLeK3%2B0HMUJ5YWsBTTxwJoVeOv7Vwgs2ufBPbp9knb%2BK5BOMH01mAXzjkBQHxYAPG3DUY3t52tfnXuejilvGxvGrdA%3D&id=gxZ4v0BsNPDGC35CMSjCpg  
+INFO  2018-12-09 13:23:45,499 [71   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2018-12-09 13:23:45,503 [71   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2018-12-09 13:23:45,505 [71   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:45,507 [71   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2018-12-09 13:23:45,509 [71   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2018-12-09 13:23:45,511 [71   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2018-12-09 13:23:45,524 [28   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2018-12-09 13:23:45,528 [28   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"gxZ4v0BsNPDGC35CMSjCpg","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2018-12-09T13:23:45.5250516+03:00","Properties":{}}
+DEBUG 2018-12-09 13:23:45,529 [28   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: gxZ4v0BsNPDGC35CMSjCpg
+DEBUG 2018-12-09 13:25:37,994 [79   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: gxZ4v0BsNPDGC35CMSjCpg
+INFO  2018-12-09 13:25:37,999 [79   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 112499.6106ms 101 

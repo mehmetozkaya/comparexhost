@@ -93,5 +93,7 @@
     <text name="Settings">Settings</text>
     <text name="Cases">Cases</text>
     <text name="XofYregistered">Register User Count : {0}</text>
+    <text name="PhoneBook">Phone Book</text>
+    
   </texts>
 </localizationDictionary>
