@@ -36,6 +36,6 @@ namespace CompareX.PhoneBook
                 .ToList();
 
             return new ListResultDto<PersonDto>(ObjectMapper.Map<List<PersonDto>>(people));
-        }     
+        }
     }
 }
