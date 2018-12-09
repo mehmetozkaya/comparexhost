@@ -13,4 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CompareX.Core\CompareX.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PhoneBook\Dto\" />
+  </ItemGroup>
 </Project>
