@@ -1,8 +1,10 @@
 ﻿using Abp.Application.Services.Dto;
+using Abp.Authorization;
 using Abp.Collections.Extensions;
 using Abp.Domain.Repositories;
 using Abp.Extensions;
 using Abp.Linq.Extensions;
+using CompareX.Authorization;
 using CompareX.People;
 using CompareX.PhoneBook.Dto;
 using System;
@@ -13,6 +15,7 @@ using System.Threading.Tasks;
 
 namespace CompareX.PhoneBook
 {
+    [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook)]
     public class PersonAppService : CompareXAppServiceBase, IPersonAppService
     {
         private readonly IRepository<Person, Guid> _personRepository;
