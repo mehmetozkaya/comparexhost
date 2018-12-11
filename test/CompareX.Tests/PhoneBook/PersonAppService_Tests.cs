@@ -1,4 +1,5 @@
-﻿using CompareX.PhoneBook;
+﻿using Abp.Runtime.Validation;
+using CompareX.PhoneBook;
 using CompareX.PhoneBook.Dto;
 using Shouldly;
 using System;
@@ -60,6 +61,21 @@ namespace CompareX.Tests.PhoneBook
                     var john = context.People.FirstOrDefault(p => p.EmailAddress == "john.nash@abeautifulmind.com");
                     john.ShouldNotBe(null);
                     john.Name.ShouldBe("John");
+                });
+        }
+
+        [Fact]
+        public async Task Should_Not_Create_Person_With_Invalid_Arguments()
+        {
+            //Act and Assert
+            await Assert.ThrowsAsync<AbpValidationException>(
+                async () =>
+                {
+                    await _personAppService.CreatePerson(
+                            new CreatePersonInput
+                            {
+                                Name = "John"
+                            });
                 });
         }
     }
