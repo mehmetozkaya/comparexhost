@@ -13,7 +13,9 @@ namespace CompareX.Authorization
             context.CreatePermission(PermissionNames.Pages_Cases, L("Cases"));
             context.CreatePermission(PermissionNames.Pages_Tenants, L("Tenants"), multiTenancySides: MultiTenancySides.Host);
 
-            context.CreatePermission(PermissionNames.Pages_Tenant_PhoneBook, L("PhoneBook"), multiTenancySides: MultiTenancySides.Tenant);
+            var phoneBookPermission = context.CreatePermission(PermissionNames.Pages_Tenant_PhoneBook, L("PhoneBook"), multiTenancySides: MultiTenancySides.Tenant);
+            phoneBookPermission.CreateChildPermission(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson, L("CreateNewPerson"), multiTenancySides: MultiTenancySides.Tenant);
+
         }
 
         private static ILocalizableString L(string name)

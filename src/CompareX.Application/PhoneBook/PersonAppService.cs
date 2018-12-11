@@ -42,6 +42,7 @@ namespace CompareX.PhoneBook
             return new ListResultDto<PersonDto>(ObjectMapper.Map<List<PersonDto>>(people));
         }
 
+        [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson)]
         public async Task CreatePerson(CreatePersonInput input)
         {           
             var person = ObjectMapper.Map<Person>(input);
