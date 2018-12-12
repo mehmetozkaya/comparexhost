@@ -13,5 +13,7 @@
         public const string Pages_Tenant_PhoneBook = "Pages.Tenant.PhoneBook";
 
         public const string Pages_Tenant_PhoneBook_CreatePerson = "Pages.Tenant.PhoneBook.CreatePerson";
+
+        public const string Pages_Tenant_PhoneBook_DeletePerson = "Pages.Tenant.PhoneBook.DeletePerson";
     }
 }

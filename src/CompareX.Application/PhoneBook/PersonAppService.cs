@@ -49,6 +49,12 @@ namespace CompareX.PhoneBook
             await _personRepository.InsertAsync(person);
         }
 
+        [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook_DeletePerson)]
+        public async Task DeletePerson()
+        {
+
+        }
+
 
     }
 }
