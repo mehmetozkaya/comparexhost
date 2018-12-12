@@ -14,6 +14,6 @@ namespace CompareX.PhoneBook
 
         Task CreatePerson(CreatePersonInput input);
 
-        Task DeletePerson(EntityDto input);
+        Task DeletePerson(EntityDto<Guid> input);
     }
 }

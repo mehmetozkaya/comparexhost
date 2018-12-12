@@ -48,13 +48,11 @@ namespace CompareX.PhoneBook
             var person = ObjectMapper.Map<Person>(input);
             await _personRepository.InsertAsync(person);
         }
-
+        
         [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook_DeletePerson)]
-        public async Task DeletePerson()
+        public async Task DeletePerson(EntityDto<Guid> input)
         {
-
+            await _personRepository.DeleteAsync(input.Id);
         }
-
-
     }
 }
