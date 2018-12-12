@@ -8,7 +8,7 @@ using System.Text;
 namespace CompareX.PhoneBook.Dto
 {
     [AutoMapFrom(typeof(Person))]
-    public class PersonDto : FullAuditedEntityDto
+    public class PersonDto : FullAuditedEntityDto<Guid>
     {
         public string Name { get; set; }
         public string Surname { get; set; }
