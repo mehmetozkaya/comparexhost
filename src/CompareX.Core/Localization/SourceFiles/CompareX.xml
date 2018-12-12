@@ -94,6 +94,8 @@
     <text name="Cases">Cases</text>
     <text name="XofYregistered">Register User Count : {0}</text>
     <text name="PhoneBook">Phone Book</text>
-    
+    <text name="CreateNewPerson">Create New Person</text>
+    CreateNewPerson
+
   </texts>
 </localizationDictionary>
