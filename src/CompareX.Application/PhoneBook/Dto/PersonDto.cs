@@ -2,8 +2,7 @@
 using Abp.AutoMapper;
 using CompareX.People;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Collections.ObjectModel;
 
 namespace CompareX.PhoneBook.Dto
 {
@@ -13,5 +12,6 @@ namespace CompareX.PhoneBook.Dto
         public string Name { get; set; }
         public string Surname { get; set; }
         public string EmailAddress { get; set; }
+        public Collection<PhoneInPersonDto> Phones { get; set; }
     }
 }
