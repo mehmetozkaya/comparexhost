@@ -1,5 +1,7 @@
 ﻿using Abp.Domain.Entities.Auditing;
+using CompareX.PhoneNumber;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -22,6 +24,8 @@ namespace CompareX.People
 
         [MaxLength(MaxEmailAddressLength)]
         public virtual string EmailAddress { get; set; }
+
+        public virtual ICollection<Phone> Phones { get; set; }
 
         public Person()
         {
