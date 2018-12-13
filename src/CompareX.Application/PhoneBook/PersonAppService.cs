@@ -7,6 +7,8 @@ using Abp.Linq.Extensions;
 using CompareX.Authorization;
 using CompareX.People;
 using CompareX.PhoneBook.Dto;
+using CompareX.PhoneNumber;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +21,7 @@ namespace CompareX.PhoneBook
     public class PersonAppService : CompareXAppServiceBase, IPersonAppService
     {
         private readonly IRepository<Person, Guid> _personRepository;
+        private readonly IRepository<Phone, long> _phoneRepository;
 
         public PersonAppService(IRepository<Person, Guid> personRepository)
         {
@@ -29,6 +32,7 @@ namespace CompareX.PhoneBook
         {
             var people = _personRepository
                 .GetAll()
+                .Include(p => p.Phones)
                 .WhereIf(
                     !input.Filter.IsNullOrEmpty(),
                     p => p.Name.Contains(input.Filter) ||
@@ -53,6 +57,24 @@ namespace CompareX.PhoneBook
         public async Task DeletePerson(EntityDto<Guid> input)
         {
             await _personRepository.DeleteAsync(input.Id);
+        }
+
+        public async Task DeletePhone(EntityDto<long> input)
+        {
+            await _phoneRepository.DeleteAsync(input.Id);
+        }
+
+        public async Task<PhoneInPersonDto> AddPhone(AddPhoneInput input)
+        {
+            var person = _personRepository.Get(input.PersonId);
+            await _personRepository.EnsureCollectionLoadedAsync(person, p => p.Phones);
+
+            var phone = ObjectMapper.Map<Phone>(input);
+            person.Phones.Add(phone);
+
+            await CurrentUnitOfWork.SaveChangesAsync();
+
+            return ObjectMapper.Map<PhoneInPersonDto>(phone);
         }
     }
 }

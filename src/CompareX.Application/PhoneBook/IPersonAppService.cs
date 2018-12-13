@@ -11,9 +11,10 @@ namespace CompareX.PhoneBook
     public interface IPersonAppService : IApplicationService
     {
         ListResultDto<PersonDto> GetPeople(GetPeopleInput input);
-
         Task CreatePerson(CreatePersonInput input);
-
         Task DeletePerson(EntityDto<Guid> input);
+        Task DeletePhone(EntityDto<long> input);
+        Task<PhoneInPersonDto> AddPhone(AddPhoneInput input);
+
     }
 }
