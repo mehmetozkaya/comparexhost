@@ -5,6 +5,7 @@ using CompareX.Authorization.Users;
 using CompareX.MultiTenancy;
 using CompareX.Tasks;
 using CompareX.People;
+using CompareX.PhoneNumber;
 
 namespace CompareX.EntityFrameworkCore
 {
@@ -15,6 +16,8 @@ namespace CompareX.EntityFrameworkCore
         public DbSet<Person> People { get; set; }
         public DbSet<CompareX.Case.Case> Cases { get; set; }
         public DbSet<CompareX.Case.CaseRegistration> CaseRegistrations { get; set; }
+        public virtual DbSet<Phone> Phones { get; set; }
+
 
         public CompareXDbContext(DbContextOptions<CompareXDbContext> options)
             : base(options)

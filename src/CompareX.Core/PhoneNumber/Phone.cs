@@ -15,7 +15,7 @@ namespace CompareX.PhoneNumber
 
         [ForeignKey("PersonId")]
         public virtual Person Person { get; set; }
-        public virtual int PersonId { get; set; }
+        public virtual Guid PersonId { get; set; }
 
         [Required]
         public virtual PhoneType Type { get; set; }
