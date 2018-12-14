@@ -8,7 +8,7 @@ using System.Text;
 
 namespace CompareX.PhoneBook.Dto
 {
-    [AutoMapFrom(typeof(Phone))]
+    [AutoMapTo(typeof(Phone))]
     public class AddPhoneInput : FullAuditedEntityDto<long>
     {
         [Required]

@@ -70,13 +70,20 @@ namespace CompareX.PhoneBook
             var person = _personRepository.Get(input.PersonId);
             await _personRepository.EnsureCollectionLoadedAsync(person, p => p.Phones);
 
-            var phone = Phone.Create(input.PersonId, input.Type, input.Number);
-            //var phone = ObjectMapper.Map<Phone>(input);
+            //var phone = Phone.Create(input.PersonId, input.Type, input.Number);
+            var phone = ObjectMapper.Map<Phone>(input);
             person.Phones.Add(phone);
 
             await CurrentUnitOfWork.SaveChangesAsync();
 
             return ObjectMapper.Map<PhoneInPersonDto>(phone);
+        }
+
+        [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook_EditPerson)]
+        public async Task<GetPersonForEditOutput> GetPersonForEdit(GetPersonForEditInput input)
+        {
+            var person = await _personRepository.GetAsync(input.Id);
+            return ObjectMapper.Map<GetPersonForEditOutput>(person);
         }
     }
 }
