@@ -23,6 +23,18 @@ namespace CompareX.PhoneNumber
         [Required]
         [MaxLength(MaxNumberLength)]
         public virtual string Number { get; set; }
+
+        public static Phone Create(Guid personId, PhoneType type, string number)
+        {
+            var newPhone = new Phone
+            {
+                PersonId = personId,
+                Type = type,
+                Number = number
+            };
+
+            return newPhone;
+        }
     }
 
     public enum PhoneType : byte

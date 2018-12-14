@@ -95,8 +95,10 @@
     <text name="XofYregistered">Register User Count : {0}</text>
     <text name="PhoneBook">Phone Book</text>
     <text name="CreateNewPerson">Create New Person</text>
-    <text name="DeletePerson">Delete Person</text>    
-    
+    <text name="DeletePerson">Delete Person</text>
+    <text name="PhoneType_Mobile">Mobile</text>
+    <text name="PhoneType_Home">Home</text>
+    <text name="PhoneType_Business">Business</text>
 
   </texts>
 </localizationDictionary>

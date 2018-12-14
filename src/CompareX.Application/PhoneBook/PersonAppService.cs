@@ -23,10 +23,11 @@ namespace CompareX.PhoneBook
         private readonly IRepository<Person, Guid> _personRepository;
         private readonly IRepository<Phone, long> _phoneRepository;
 
-        public PersonAppService(IRepository<Person, Guid> personRepository)
+        public PersonAppService(IRepository<Person, Guid> personRepository, IRepository<Phone, long> phoneRepository)
         {
             _personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
-        }       
+            _phoneRepository = phoneRepository ?? throw new ArgumentNullException(nameof(phoneRepository));
+        }
 
         public ListResultDto<PersonDto> GetPeople(GetPeopleInput input)
         {
@@ -69,7 +70,8 @@ namespace CompareX.PhoneBook
             var person = _personRepository.Get(input.PersonId);
             await _personRepository.EnsureCollectionLoadedAsync(person, p => p.Phones);
 
-            var phone = ObjectMapper.Map<Phone>(input);
+            var phone = Phone.Create(input.PersonId, input.Type, input.Number);
+            //var phone = ObjectMapper.Map<Phone>(input);
             person.Phones.Add(phone);
 
             await CurrentUnitOfWork.SaveChangesAsync();
