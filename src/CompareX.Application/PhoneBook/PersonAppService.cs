@@ -85,5 +85,15 @@ namespace CompareX.PhoneBook
             var person = await _personRepository.GetAsync(input.Id);
             return ObjectMapper.Map<GetPersonForEditOutput>(person);
         }
+
+        [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook_EditPerson)]
+        public async Task EditPerson(EditPersonInput input)
+        {
+            var person = await _personRepository.GetAsync(input.Id);
+            person.Name = input.Name;
+            person.Surname = input.Surname;
+            person.EmailAddress = input.EmailAddress;
+            await _personRepository.UpdateAsync(person);
+        }
     }
 }
