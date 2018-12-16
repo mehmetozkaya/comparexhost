@@ -8,6 +8,7 @@ using Abp.Linq.Extensions;
 using Abp.Runtime.Caching;
 using CompareX.Authorization;
 using CompareX.People;
+using CompareX.PhoneBook.Cache;
 using CompareX.PhoneBook.Dto;
 using CompareX.PhoneNumber;
 using Microsoft.EntityFrameworkCore;
@@ -26,16 +27,20 @@ namespace CompareX.PhoneBook
         private readonly IRepository<Phone, long> _phoneRepository;
 
         private readonly ICacheManager _cacheManager;
+        private readonly IPersonCache _personCache;
 
-        public PersonAppService(IRepository<Person, Guid> personRepository, IRepository<Phone, long> phoneRepository, ICacheManager cacheManager)
+        public PersonAppService(IRepository<Person, Guid> personRepository, IRepository<Phone, long> phoneRepository, ICacheManager cacheManager, IPersonCache personCache)
         {
             _personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
             _phoneRepository = phoneRepository ?? throw new ArgumentNullException(nameof(phoneRepository));
             _cacheManager = cacheManager;
+            _personCache = personCache;
         }
 
         public ListResultDto<PersonDto> GetPeople(GetPeopleInput input)
-        {            
+        {
+            Logger.Info($"Getting all people{input.Filter}");
+
             var people = _personRepository
                 .GetAll()
                 .Include(p => p.Phones)
@@ -101,6 +106,10 @@ namespace CompareX.PhoneBook
             await _personRepository.UpdateAsync(person);
         }
 
+        public string GetPersonNameByGuid(Guid personId)
+        {
+            return _personCache[personId].Name;
+        }
         
     }
 }
