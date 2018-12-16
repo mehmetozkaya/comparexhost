@@ -5,6 +5,7 @@ using Abp.Collections.Extensions;
 using Abp.Domain.Repositories;
 using Abp.Extensions;
 using Abp.Linq.Extensions;
+using Abp.Runtime.Caching;
 using CompareX.Authorization;
 using CompareX.People;
 using CompareX.PhoneBook.Dto;
@@ -24,14 +25,17 @@ namespace CompareX.PhoneBook
         private readonly IRepository<Person, Guid> _personRepository;
         private readonly IRepository<Phone, long> _phoneRepository;
 
-        public PersonAppService(IRepository<Person, Guid> personRepository, IRepository<Phone, long> phoneRepository)
+        private readonly ICacheManager _cacheManager;
+
+        public PersonAppService(IRepository<Person, Guid> personRepository, IRepository<Phone, long> phoneRepository, ICacheManager cacheManager)
         {
             _personRepository = personRepository ?? throw new ArgumentNullException(nameof(personRepository));
             _phoneRepository = phoneRepository ?? throw new ArgumentNullException(nameof(phoneRepository));
+            _cacheManager = cacheManager;
         }
 
         public ListResultDto<PersonDto> GetPeople(GetPeopleInput input)
-        {
+        {            
             var people = _personRepository
                 .GetAll()
                 .Include(p => p.Phones)
