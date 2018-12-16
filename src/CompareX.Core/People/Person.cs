@@ -36,5 +36,5 @@ namespace CompareX.People
         {
             Name = name;
         }
-    }
+    }    
 }
