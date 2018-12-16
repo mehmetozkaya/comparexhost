@@ -1,7 +1,9 @@
-﻿using Abp.Application.Services.Dto;
+﻿using Abp.Application.Features;
+using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
 using Abp.Collections.Extensions;
+using Abp.Configuration;
 using Abp.Domain.Repositories;
 using Abp.Extensions;
 using Abp.Linq.Extensions;
@@ -57,9 +59,15 @@ namespace CompareX.PhoneBook
             return new ListResultDto<PersonDto>(ObjectMapper.Map<List<PersonDto>>(people));
         }
 
-        [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson)]
+        //[RequiresFeature("ExportToExcel")]
+        [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook_CreatePerson)]        
         public async Task CreatePerson(CreatePersonInput input)
-        {           
+        {
+            //if (await FeatureChecker.IsEnabledAsync("CreatePerson"))
+            //{
+            //    throw new AbpAuthorizationException("You don't have this feature: CreatePerson");
+            //}
+
             var person = ObjectMapper.Map<Person>(input);
             await _personRepository.InsertAsync(person);
         }
@@ -77,6 +85,13 @@ namespace CompareX.PhoneBook
 
         public async Task<PhoneInPersonDto> AddPhone(AddPhoneInput input)
         {
+            //// feature check : i.e. you reached call api limit for this type, please extend your user
+            //var createdTaskCountInThisMonth = GetCreatedTaskCountInThisMonth();
+            //if (createdTaskCountInThisMonth >= FeatureChecker.GetValue("MaxTaskCreationLimitPerMonth").To<int>())
+            //{
+            //    throw new AbpAuthorizationException("You exceed task creation limit for this month, sorry :(");
+            //}
+
             var person = _personRepository.Get(input.PersonId);
             await _personRepository.EnsureCollectionLoadedAsync(person, p => p.Phones);
 
@@ -92,6 +107,9 @@ namespace CompareX.PhoneBook
         [AbpAuthorize(PermissionNames.Pages_Tenant_PhoneBook_EditPerson)]
         public async Task<GetPersonForEditOutput> GetPersonForEdit(GetPersonForEditInput input)
         {
+            // example of settings
+            var email = SettingManager.GetSettingValue("Abp.Net.Mail.DefaultFromAddress");
+
             var person = await _personRepository.GetAsync(input.Id);
             return ObjectMapper.Map<GetPersonForEditOutput>(person);
         }
