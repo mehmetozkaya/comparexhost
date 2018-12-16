@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CompareX.PhoneBook.Cache
 {
-    public interface IPersonCache : IEntityCache<PersonCacheItem>
+    public interface IPersonCache : IEntityCache<PersonCacheItem, Guid>
     {
 
     }
