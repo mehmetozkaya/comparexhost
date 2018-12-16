@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
+using Abp.Domain.Services;
 using Abp.Events.Bus;
 using Abp.UI;
 using CompareX.Authorization.Users;
@@ -11,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CompareX.Case
 {
-    public class CaseManager : ICaseManager
+    public class CaseManager : DomainService, ICaseManager
     {
         public IEventBus EventBus { get; set; }
 
@@ -25,7 +26,7 @@ namespace CompareX.Case
             _caseRegistrationRepository = caseRegistrationRepository ?? throw new ArgumentNullException(nameof(caseRegistrationRepository));
             _caseRepository = caseRepository ?? throw new ArgumentNullException(nameof(caseRepository));
 
-            EventBus = NullEventBus.Instance;            
+            EventBus = NullEventBus.Instance;
         }
 
         public async Task<Case> GetAsync(Guid id)

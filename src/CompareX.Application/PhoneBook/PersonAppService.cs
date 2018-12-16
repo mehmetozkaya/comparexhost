@@ -38,7 +38,7 @@ namespace CompareX.PhoneBook
         }
 
         public ListResultDto<PersonDto> GetPeople(GetPeopleInput input)
-        {
+        {            
             Logger.Info($"Getting all people{input.Filter}");
 
             var people = _personRepository

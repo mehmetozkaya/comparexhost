@@ -2,6 +2,7 @@
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using CompareX.Authorization;
+using CompareX.Features;
 
 namespace CompareX
 {
@@ -13,6 +14,7 @@ namespace CompareX
         public override void PreInitialize()
         {
             Configuration.Authorization.Providers.Add<CompareXAuthorizationProvider>();
+            Configuration.Features.Providers.Add<CompareXFeatureProvider>();
         }
 
         public override void Initialize()
