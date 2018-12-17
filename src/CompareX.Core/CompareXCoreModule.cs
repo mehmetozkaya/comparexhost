@@ -1,11 +1,13 @@
 ﻿using Abp.Modules;
 using Abp.Reflection.Extensions;
+using Abp.Threading.BackgroundWorkers;
 using Abp.Timing;
 using Abp.Zero;
 using Abp.Zero.Configuration;
 using CompareX.Authorization.Roles;
 using CompareX.Authorization.Users;
 using CompareX.Configuration;
+using CompareX.Jobs;
 using CompareX.Localization;
 using CompareX.MultiTenancy;
 using CompareX.Timing;
@@ -43,6 +45,9 @@ namespace CompareX
         public override void PostInitialize()
         {
             IocManager.Resolve<AppTimes>().StartupTime = Clock.Now;
+
+            var workManager = IocManager.Resolve<IBackgroundWorkerManager>();
+            workManager.Add(IocManager.Resolve<MakeInactiveUsersPassiveWorker>());
         }
     }
 }
