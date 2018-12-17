@@ -4,8 +4,6 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using CompareX.Authorization.Users;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CompareX.Jobs
 {
