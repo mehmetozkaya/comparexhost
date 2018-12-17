@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CompareX.Jobs
 {
-    public class CompareXEmailAppService : ApplicationService, ICompareXEmailAppService
+    public class CompareXEmailAppService : CompareXAppServiceBase, ICompareXEmailAppService
     {
         private readonly IBackgroundJobManager _backgroundJobManager;
 
@@ -24,9 +24,23 @@ namespace CompareX.Jobs
                 {
                     Subject = input.Subject,
                     Body = input.Body,
-                    SenderUserId = AbpSession.GetUserId(),
+                    SenderUserId = 1,
                     TargetUserId = input.TargetUserId
                 });
+        }
+    }
+
+
+    public class TestAppService : CompareXAppServiceBase
+    {
+        public TestAppService()
+        {
+
+        }
+
+        public async Task Reason(SendEmailInput input)
+        {
+            
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CompareX.Jobs
 {
-    internal interface ICompareXEmailAppService
+    public interface ICompareXEmailAppService
     {
     }
 }
