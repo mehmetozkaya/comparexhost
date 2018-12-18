@@ -76,6 +76,11 @@ namespace CompareX.Web.Host.Startup
                 });
             });
 
+            //services.AddHangfire(config =>
+            //{
+            //    config.UseSqlServerStorage(_appConfiguration.GetConnectionString("Default"));
+            //});
+
             // Configure Abp and Dependency Injection
             return services.AddAbp<CompareXWebHostModule>(
                 // Configure Log4Net logging
@@ -95,7 +100,7 @@ namespace CompareX.Web.Host.Startup
 
             app.UseAuthentication();
 
-            app.UseAbpRequestLocalization();
+            app.UseAbpRequestLocalization();            
 
 
             app.UseSignalR(routes =>
