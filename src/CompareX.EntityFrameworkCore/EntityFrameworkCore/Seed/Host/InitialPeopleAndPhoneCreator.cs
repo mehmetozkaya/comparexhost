@@ -49,6 +49,22 @@ namespace CompareX.EntityFrameworkCore.Seed.Host
                                 }
                     });
             }
+
+            var mehmet = _context.People.FirstOrDefault(p => p.EmailAddress == "mehmet.ozkaya@mozk.org");
+            if (mehmet == null)
+            {
+                _context.People.Add(
+                    new People.Person
+                    {
+                        Name = "Mehmet",
+                        Surname = "Ozkaya",
+                        EmailAddress = "mehmet.ozkaya@mozk.org",
+                        Phones = new List<Phone>
+                                {
+                                    new Phone { Type = PhoneType.Home, Number = "5012222222" }
+                                }
+                    });
+            }
         }
     }
 }
