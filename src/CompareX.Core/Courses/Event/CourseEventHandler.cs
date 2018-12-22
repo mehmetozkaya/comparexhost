@@ -56,7 +56,13 @@ namespace CompareX.Courses
 
         public void HandleEvent(CourseCancelledEvent eventData)
         {
-            throw new NotImplementedException();
+            //TODO: Send email to all registered users!
+            var registeredUsers = AsyncHelper.RunSync(() => _courseManager.GetRegisteredUsersAsync(eventData.Entity));
+            foreach (var user in registeredUsers)
+            {
+                var message = eventData.Entity.Title + " event is canceled!";
+                Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
+            }
         }
     }
 }
