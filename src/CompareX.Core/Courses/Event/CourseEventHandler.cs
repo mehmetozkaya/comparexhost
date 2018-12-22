@@ -9,5 +9,19 @@ namespace CompareX.Courses
 {
     public class CourseEventHandler : IEventHandler<EntityCreatedEventData<Course>>, IEventHandler<CourseDateChangedEvent>, IEventHandler<CourseCancelledEvent>, ITransientDependency
     {
+        public void HandleEvent(EntityCreatedEventData<Course> eventData)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HandleEvent(CourseDateChangedEvent eventData)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HandleEvent(CourseCancelledEvent eventData)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
