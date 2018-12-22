@@ -27,7 +27,7 @@ namespace CompareX.Courses.Dto
     {
         public bool IncludeCanceledEvents { get; set; }
     }
-
+        
     public class CourseDetailOutput : FullAuditedEntityDto
     {
         public string Title { get; set; }
@@ -38,7 +38,7 @@ namespace CompareX.Courses.Dto
 
         public bool IsCancelled { get; set; }
 
-        public virtual int MaxRegistrationCount { get; protected set; }
+        public virtual int MaxRegistrationCount { get; set; }
 
         public int RegistrationsCount { get; set; }
 

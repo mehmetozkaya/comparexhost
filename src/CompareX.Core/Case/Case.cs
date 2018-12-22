@@ -14,7 +14,7 @@ namespace CompareX.Case
 {
     [Table("AppCases")]
     public class Case : FullAuditedEntity<Guid>, IMustHaveTenant
-    {
+    {        
         public const int MaxTitleLength = 128;
         public const int MaxDescriptionLength = 2048;
 
@@ -51,14 +51,14 @@ namespace CompareX.Case
                 Description = description,
                 MaxRegistrationCount = maxRegistrationCount
             };
-
+            
             newCase.SetDate(date);
             newCase.Registrations = new Collection<CaseRegistration>();
             return newCase;
         }
 
         public bool IsInPast()
-        {
+        {            
             return Date < Clock.Now;
         }
 

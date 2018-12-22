@@ -122,6 +122,5 @@ namespace CompareX.Courses
                 throw new UserFriendlyException("This event is canceled!");
             }
         }
-
     }
 }
