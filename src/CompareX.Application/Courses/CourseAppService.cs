@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Abp.Linq.Extensions;
 using System.Threading.Tasks;
+using CompareX.Authorization.Users;
 
 namespace CompareX.Courses
 {
@@ -63,6 +64,36 @@ namespace CompareX.Courses
             await _courseManager.CreateAsync(newCourse);
         }
 
+        public async Task CancelAsync(EntityDto input)
+        {
+            var cancelCase = await _courseManager.GetAsync(input.Id);
+            _courseManager.Cancel(cancelCase);
+        }
+
+        public async Task<CourseRegisterOutput> RegisterAsync(EntityDto input)
+        {
+            var registration = await RegisterAndSaveAsync(await _courseManager.GetAsync(input.Id), await GetCurrentUserAsync());
+
+            return new CourseRegisterOutput
+            {
+                RegistrationId = registration.Id
+            };
+        }
+
+        private async Task<CourseRegistration> RegisterAndSaveAsync(Course course, User user)
+        {
+            var registration = await _courseManager.RegisterAsync(course, user);
+            await CurrentUnitOfWork.SaveChangesAsync();
+            return registration;
+        }
+
+        public async Task CancelRegistrationAsync(EntityDto input)
+        {
+            await _courseManager.CancelRegistrationAsync(
+                await _courseManager.GetAsync(input.Id),
+                await GetCurrentUserAsync()
+                );
+        }
 
     }
 }

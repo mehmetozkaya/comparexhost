@@ -63,8 +63,8 @@ namespace CompareX.Courses.Dto
         [StringLength(Course.MaxTitleLength)]
         public string Title { get; set; }
 
-        //[StringLength(Course.MaxDescriptionLength)]
-        //public string Description { get; set; }
+        [StringLength(Course.MaxDescriptionLength)]
+        public string Description { get; set; }
 
         public DateTime Date { get; set; }
 
