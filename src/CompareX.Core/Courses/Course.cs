@@ -23,8 +23,8 @@ namespace CompareX.Courses
         [StringLength(MaxTitleLength)]
         public virtual string Title { get; protected set; }
 
-        [StringLength(MaxDescriptionLength)]
-        public virtual string Description { get; protected set; }
+        //[StringLength(MaxDescriptionLength)]
+        //public virtual string Description { get; protected set; }
 
         public virtual DateTime Date { get; protected set; }
 
@@ -46,7 +46,7 @@ namespace CompareX.Courses
             {                
                 TenantId = tenantId,
                 Title = title,
-                Description = description,
+                //Description = description,
                 MaxRegistrationCount = maxRegistrationCount
             };
 
