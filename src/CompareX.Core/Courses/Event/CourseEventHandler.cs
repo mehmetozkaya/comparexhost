@@ -2,6 +2,7 @@
 using Abp.Domain.Uow;
 using Abp.Events.Bus.Entities;
 using Abp.Events.Bus.Handlers;
+using Abp.Threading;
 using Castle.Core.Logging;
 using CompareX.Authorization.Users;
 using System;
@@ -44,7 +45,13 @@ namespace CompareX.Courses
 
         public void HandleEvent(CourseDateChangedEvent eventData)
         {
-            throw new NotImplementedException();
+            //TODO: Send email to all registered users!
+            var registeredUsers = AsyncHelper.RunSync(() => _courseManager.GetRegisteredUsersAsync(eventData.Entity));
+            foreach (var user in registeredUsers)
+            {
+                var message = eventData.Entity.Title + " event's date is changed! New date is: " + eventData.Entity.Date;
+                Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
+            }            
         }
 
         public void HandleEvent(CourseCancelledEvent eventData)
