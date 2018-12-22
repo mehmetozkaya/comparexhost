@@ -1,5 +1,6 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using CompareX.Authorization.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,20 +12,15 @@ namespace CompareX.Courses
     [Table("AppCourseRegistrations")]
     public class CourseRegistration : FullAuditedEntity, IMustHaveTenant
     {
-        public const int MaxTitleLength = 128;
-        public const int MaxDescriptionLength = 2048;
-
         public virtual int TenantId { get; set; }
 
-        [Required]
-        [StringLength(MaxTitleLength)]
-        public virtual string Title { get; protected set; }
+        [ForeignKey("CourseId")]
+        public virtual Course Course { get; protected set; }
+        public virtual int CourseId { get; protected set; }
 
-        [StringLength(MaxDescriptionLength)]
-        public virtual string Description { get; protected set; }
-
-
-
+        [ForeignKey("UserId")]
+        public virtual User User { get; protected set; }
+        public virtual long UserId { get; protected set; }
 
     }
 }
