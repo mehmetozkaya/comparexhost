@@ -4,12 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using CompareX.Courses.Dto;
 
 namespace CompareX.Courses
 {
     public interface ICourseAppService : IApplicationService
     {
-        Task<ListResultDto<CourseDto>> GetListAsync(GetCourseInput input);
+        Task<ListResultDto<CourseDto>> GetListAsync(GetCourseListInput input);
 
         Task<CourseDetailOutput> GetDetailAsync(EntityDto input);
 

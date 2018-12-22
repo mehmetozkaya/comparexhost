@@ -12,7 +12,7 @@ using System.Text;
 
 namespace CompareX.Courses
 {
-    [Table("AppCourses")]
+    [Table("Courses")]
     public class Course : FullAuditedEntity, IMustHaveTenant
     {
         public const int MaxTitleLength = 128;

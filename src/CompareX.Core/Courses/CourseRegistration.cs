@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace CompareX.Courses
 {
-    [Table("AppCourseRegistrations")]
+    [Table("CourseRegistrations")]
     public class CourseRegistration : FullAuditedEntity, IMustHaveTenant
     {
         public virtual int TenantId { get; set; }
