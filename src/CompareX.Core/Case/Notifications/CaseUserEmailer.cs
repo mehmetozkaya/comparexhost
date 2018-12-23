@@ -12,7 +12,7 @@ using System.Text;
 
 namespace CompareX.Case.Notifications
 {
-    public class CaseUserEmailer : IEventHandler<EntityCreatedEventData<Case>>, IEventHandler<CaseDateChangedEvent>, IEventHandler<CaseCancelledEvent>, ITransientDependency
+    public class CaseUserEmailer : IEventHandler<CaseDateChangedEvent>, IEventHandler<CaseCancelledEvent>, ITransientDependency
     {
         public ILogger Logger { get; set; }
 
@@ -27,21 +27,21 @@ namespace CompareX.Case.Notifications
             Logger = NullLogger.Instance;            
         }
 
-        [UnitOfWork]
-        public virtual void HandleEvent(EntityCreatedEventData<Case> caseData)
-        {
-            //TODO: Send email to all tenant users as a notification
-            var users = _userManager
-              .Users
-              .Where(u => u.TenantId == caseData.Entity.TenantId)
-              .ToList();
+        //[UnitOfWork]
+        //public virtual void HandleEvent(EntityCreatedEventData<Case> caseData)
+        //{
+        //    //TODO: Send email to all tenant users as a notification
+        //    var users = _userManager
+        //      .Users
+        //      .Where(u => u.TenantId == caseData.Entity.TenantId)
+        //      .ToList();
 
-            foreach (var user in users)
-            {
-                var message = string.Format("Hey! There is a new event '{0}' on {1}! Want to register?", caseData.Entity.Title, caseData.Entity.Date);
-                Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
-            }
-        }
+        //    foreach (var user in users)
+        //    {
+        //        var message = string.Format("Hey! There is a new event '{0}' on {1}! Want to register?", caseData.Entity.Title, caseData.Entity.Date);
+        //        Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
+        //    }
+        //}
 
         public void HandleEvent(CaseDateChangedEvent eventData)
         {

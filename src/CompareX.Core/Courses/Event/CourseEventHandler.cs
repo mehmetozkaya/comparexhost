@@ -12,7 +12,7 @@ using System.Text;
 
 namespace CompareX.Courses
 {
-    public class CourseEventHandler : IEventHandler<EntityCreatedEventData<Course>>, IEventHandler<CourseDateChangedEvent>, IEventHandler<CourseCancelledEvent>, ITransientDependency
+    public class CourseEventHandler : IEventHandler<CourseDateChangedEvent>, IEventHandler<CourseCancelledEvent>, ITransientDependency
     {
         public ILogger Logger { get; set; }
 
@@ -27,21 +27,21 @@ namespace CompareX.Courses
             Logger = NullLogger.Instance;
         }
 
-        [UnitOfWork]
-        public void HandleEvent(EntityCreatedEventData<Course> courseData)
-        {
-            //TODO: Send email to all tenant users as a notification
-            var users = _userManager
-              .Users
-              .Where(u => u.TenantId == courseData.Entity.TenantId)
-              .ToList();
+        //[UnitOfWork]
+        //public void HandleEvent(EntityCreatedEventData<Course> courseData)
+        //{
+        //    //TODO: Send email to all tenant users as a notification
+        //    var users = _userManager
+        //      .Users
+        //      .Where(u => u.TenantId == courseData.Entity.TenantId)
+        //      .ToList();
 
-            foreach (var user in users)
-            {
-                var message = string.Format("Hey! There is a new event '{0}' on {1}! Want to register?", courseData.Entity.Title, courseData.Entity.Date);
-                Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
-            }            
-        }
+        //    foreach (var user in users)
+        //    {
+        //        var message = string.Format("Hey! There is a new event '{0}' on {1}! Want to register?", courseData.Entity.Title, courseData.Entity.Date);
+        //        Logger.Debug(string.Format("TODO: Send email to {0} -> {1}", user.EmailAddress, message));
+        //    }            
+        //}
 
         public void HandleEvent(CourseDateChangedEvent eventData)
         {
