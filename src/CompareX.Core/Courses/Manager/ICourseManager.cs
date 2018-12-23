@@ -14,10 +14,5 @@ namespace CompareX.Courses
         Task<CourseRegistration> RegisterAsync(Course registerCourse, User user);
         Task CancelRegistrationAsync(Course cancelRegisterCourse, User user);
         Task<IReadOnlyList<User>> GetRegisteredUsersAsync(Course registeredCourse);
-    }
-
-    public interface ICourseManager2 : IDomainService
-    {
-        Task<Course> GetAsync(int id);
-    }
+    }    
 }

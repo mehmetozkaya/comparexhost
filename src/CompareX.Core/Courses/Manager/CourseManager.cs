@@ -12,28 +12,6 @@ using System.Threading.Tasks;
 
 namespace CompareX.Courses
 {
-    public class CourseManager2 : DomainService, ICourseManager2
-    {
-        private readonly ICourseRegistrationPolicy _registrationPolicy;
-
-        private readonly IRepository<CourseRegistration> _courseRegistrationRepository;
-        private readonly IRepository<Course> _courseRepository;
-
-
-        public CourseManager2(IRepository<CourseRegistration> courseRegistrationRepository, IRepository<Course> courseRepository)
-        {
-            // _registrationPolicy = registrationPolicy ?? throw new ArgumentNullException(nameof(registrationPolicy));
-
-            _courseRegistrationRepository = courseRegistrationRepository ?? throw new ArgumentNullException(nameof(courseRegistrationRepository));
-            _courseRepository = courseRepository ?? throw new ArgumentNullException(nameof(courseRepository));
-        }
-
-        public Task<Course> GetAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
     public class CourseManager : DomainService, ICourseManager
     {
         public IEventBus EventBus { get; set; }
