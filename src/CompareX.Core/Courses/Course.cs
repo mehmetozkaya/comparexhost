@@ -74,7 +74,7 @@ namespace CompareX.Courses
 
             SetDate(date);
 
-            DomainEvents.EventBus.Trigger(new CourseDateChangedEvent(this));
+            // DomainEvents.EventBus.Trigger(new CourseDateChangedEvent(this));
         }
 
         internal void Cancel()
@@ -104,7 +104,7 @@ namespace CompareX.Courses
 
             Date = date;
 
-            DomainEvents.EventBus.Trigger(new CourseDateChangedEvent(this));
+            // DomainEvents.EventBus.Trigger(new CourseDateChangedEvent(this));
         }
 
         private void AssertNotInPast()

@@ -92,14 +92,18 @@
     <text name="Skins">Skins</text>
     <text name="Settings">Settings</text>
     <text name="Cases">Cases</text>
+
     <text name="XofYregistered">Register User Count : {0}</text>
+    <text name="XregisteredOfYAvailableRegistration">Register User Count : {0} - Max Register Count : {1}</text>
     <text name="PhoneBook">Phone Book</text>
     <text name="CreateNewPerson">Create New Person</text>
     <text name="DeletePerson">Delete Person</text>
-    <text name="EditPerson">Edit Person</text>    
+    <text name="EditPerson">Edit Person</text>
     <text name="PhoneType_Mobile">Mobile</text>
     <text name="PhoneType_Home">Home</text>
     <text name="PhoneType_Business">Business</text>
+
+    <text name="Courses">Courses</text>
 
   </texts>
 </localizationDictionary>

@@ -16,6 +16,8 @@
             new HostRoleAndUserCreator(_context).Create();
             new DefaultSettingsCreator(_context).Create();
             new InitialPeopleAndPhoneCreator(_context).Create();
+            new InitialCaseCreator(_context).Create();
+            new InitialCourseCreator(_context).Create();
 
             _context.SaveChanges();
         }

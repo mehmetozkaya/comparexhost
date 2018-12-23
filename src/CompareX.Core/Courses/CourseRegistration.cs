@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace CompareX.Courses
 {
     [Table("CourseRegistrations")]
-    public class CourseRegistration : FullAuditedEntity, IMustHaveTenant
+    public class CourseRegistration : CreationAuditedEntity, IMustHaveTenant
     {
         public virtual int TenantId { get; set; }
 

@@ -10,7 +10,6 @@ using Abp.Linq.Extensions;
 using Abp.AutoMapper;
 using System.Collections.Generic;
 using Abp.UI;
-using Abp.Runtime.Session;
 using CompareX.Authorization.Users;
 
 namespace CompareX.Case

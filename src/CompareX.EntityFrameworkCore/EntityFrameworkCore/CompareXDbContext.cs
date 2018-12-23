@@ -19,6 +19,7 @@ namespace CompareX.EntityFrameworkCore
         public DbSet<CompareX.Case.CaseRegistration> CaseRegistrations { get; set; }
         public virtual DbSet<Phone> Phones { get; set; }
         public virtual DbSet<Course> Courses { get; set; }
+        public virtual DbSet<CourseRegistration> CourseRegistrations { get; set; }
 
 
         public CompareXDbContext(DbContextOptions<CompareXDbContext> options)

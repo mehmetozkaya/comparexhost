@@ -1,8 +1,5 @@
 ﻿using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using CompareX.Courses.Dto;
 
@@ -21,5 +18,5 @@ namespace CompareX.Courses
         Task<CourseRegisterOutput> RegisterAsync(EntityDto input);
 
         Task CancelRegistrationAsync(EntityDto input);
-    }
+    }   
 }

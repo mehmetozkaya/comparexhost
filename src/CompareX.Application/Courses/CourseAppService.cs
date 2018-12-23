@@ -11,6 +11,7 @@ using System.Linq;
 using Abp.Linq.Extensions;
 using System.Threading.Tasks;
 using CompareX.Authorization.Users;
+using CompareX.Case;
 
 namespace CompareX.Courses
 {
@@ -19,10 +20,10 @@ namespace CompareX.Courses
         private readonly ICourseManager _courseManager;
         private readonly IRepository<Course> _courseRepository;
 
-        public CourseAppService(ICourseManager courseManager, IRepository<Course> caseRepository)
+        public CourseAppService(ICourseManager courseManager, IRepository<Course> courseRepository)
         {
             _courseManager = courseManager ?? throw new ArgumentNullException(nameof(courseManager));
-            _courseRepository = caseRepository ?? throw new ArgumentNullException(nameof(caseRepository));
+            _courseRepository = courseRepository ?? throw new ArgumentNullException(nameof(courseRepository));
         }
 
         public async Task<ListResultDto<CourseDto>> GetListAsync(GetCourseListInput input)
@@ -37,6 +38,8 @@ namespace CompareX.Courses
 
             var courseList = ObjectMapper.Map<List<CourseDto>>(courses);
             return new ListResultDto<CourseDto>(courseList);
+
+            // return new ListResultDto<CourseDto>(courses.MapTo<List<CourseDto>>());            
         }
 
         public async Task<CourseDetailOutput> GetDetailAsync(EntityDto input)
@@ -66,8 +69,8 @@ namespace CompareX.Courses
 
         public async Task CancelAsync(EntityDto input)
         {
-            var cancelCase = await _courseManager.GetAsync(input.Id);
-            _courseManager.Cancel(cancelCase);
+            var cancelCourse = await _courseManager.GetAsync(input.Id);
+            _courseManager.Cancel(cancelCourse);
         }
 
         public async Task<CourseRegisterOutput> RegisterAsync(EntityDto input)
