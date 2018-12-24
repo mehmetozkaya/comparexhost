@@ -23,8 +23,12 @@ namespace CompareX.Courses
         [StringLength(MaxTitleLength)]
         public virtual string Title { get; protected set; }
 
+        [StringLength(MaxDescriptionLength)]
+        public virtual string Description { get; protected set; }
+
+        // TODOX
         //[StringLength(MaxDescriptionLength)]
-        //public virtual string Description { get; protected set; }
+        //public virtual string Location { get; protected set; }
 
         public virtual DateTime Date { get; protected set; }
 
@@ -40,13 +44,14 @@ namespace CompareX.Courses
         {
         }
 
-        public static Course Create(int tenantId, string title, DateTime date, string description = null, int maxRegistrationCount = 0)
+        public static Course Create(int tenantId, string title, DateTime date, string description = null, int maxRegistrationCount = 0, string location = null)
         {
             var newCourse = new Course
             {                
                 TenantId = tenantId,
                 Title = title,
-                //Description = description,
+                Description = description,
+                //Location = location, // TODOX
                 MaxRegistrationCount = maxRegistrationCount
             };
 

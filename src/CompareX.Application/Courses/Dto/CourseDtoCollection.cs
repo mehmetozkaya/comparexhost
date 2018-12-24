@@ -12,7 +12,10 @@ namespace CompareX.Courses.Dto
     {
         public string Title { get; set; }
 
-        //public string Description { get; set; }
+        public string Description { get; set; }
+
+        // TODOX
+        //public string Location { get; set; }
 
         public DateTime Date { get; set; }
 
@@ -32,7 +35,10 @@ namespace CompareX.Courses.Dto
     {
         public string Title { get; set; }
 
-        // public string Description { get; set; }
+        public string Description { get; set; }
+
+        // TODOX
+        //public string Location { get; set; }
 
         public DateTime Date { get; set; }
 
@@ -65,6 +71,9 @@ namespace CompareX.Courses.Dto
 
         [StringLength(Course.MaxDescriptionLength)]
         public string Description { get; set; }
+
+        // TODOX
+        //public string Location { get; set; }
 
         public DateTime Date { get; set; }
 
