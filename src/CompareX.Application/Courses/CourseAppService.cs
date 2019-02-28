@@ -12,6 +12,7 @@ using Abp.Linq.Extensions;
 using System.Threading.Tasks;
 using CompareX.Authorization.Users;
 using CompareX.Case;
+using Abp.Runtime.Session;
 
 namespace CompareX.Courses
 {
@@ -49,6 +50,7 @@ namespace CompareX.Courses
                 .Include(e => e.Registrations)
                 .ThenInclude(r => r.User)
                 .Where(e => e.Id == input.Id)
+                //.WhereIf(AbpSession.TenantId.HasValue, e => e.TenantId == AbpSession.TenantId.Value)
                 .FirstOrDefaultAsync();
 
             if (detailedCourse == null)
@@ -63,7 +65,11 @@ namespace CompareX.Courses
 
         public async Task CreateAsync(CreateCourseInput input)
         {
-            var newCourse = Course.Create(1, input.Title, input.Date, input.Description, input.MaxRegistrationCount);
+            var tenantId = 1;
+            if (AbpSession.TenantId.HasValue)
+                tenantId = AbpSession.TenantId.Value;
+
+            var newCourse = Course.Create(tenantId, input.Title, input.Date, input.Description, input.MaxRegistrationCount);
             await _courseManager.CreateAsync(newCourse);
         }
 
